@@ -1,0 +1,17 @@
+gradio==4.42.0
+gradio_client
+openai
+llama-index==0.10.53
+python-dotenv
+llama_index-readers-json
+llama_index-retrievers-bm25
+gspread
+ansi2html
+# sqlalchemy 
+# sqlalchemy-bigquery 
+# google-cloud-bigquery
+# google-cloud-bigquery-storage
+# llama-index-readers-google
+# gradio_agentchatbot
+# langchain
+# langchain-openai

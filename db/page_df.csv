@@ -1,0 +1,1852 @@
+,,PageGroup,Page,Page Name,Status,Web,App,GA4 App,Team,Note,Detail,Detail App,Page CDs (via event: page_metadata),GA4 (via event: screen_view),@dropdown,,,,,,,,
+0,1,Homepage,Homepage,homepage,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.panwxn4x03lk,,,,,,,,,,,,
+1,2,Listing,Listing - Ad List,listing_[cate/subcate]_[if rent available: sell/rent],Released,x,x,x,Growth,Section of listing ads,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.mykgq5kob58m,,"ad_type = {ad_type}
+projectid = {project_id}
+ward_id
+ward_name
+",,,,,,,,,,v
+2,3,Listing,Listing - Main Search,listing_[cate/subcate]_[if rent available: sell/rent],Released,x,x,x,Growth,"Section search, filter. Not send as page
+
+for search result page:
+add one dataLayer/parameter more is ""keyword"" when ad_list page/screen loaded after users searched directly or suggested
+",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.9kfjfli8klo,,"
+- keyword = {keyword}
+
+if rent avalable: ad_type (cd115)",,,,,,,,,,
+3,4,Adview,Adview - Contact seller,adview_[cate/subcate],Released,x,x,,Growth,,,,"ad_source = classifyad | stickyad | similarad | shop | publicProfile | nativead | other | cupid | personalizead | recoad | reco_listing | delivery_ad | sticky_ad_sda
+
+Adding:
+event_source = 
+- click ad from listing : ad_list 
+- click ad  from page/screen ""tin đăng tương tự"" : similar_ad_list 
+- click ad from section ""tin đăng tương tự"" : similar_ad 
+- click ad from section  "" home_recommend_section - tab Dành cho bạn ""  : home_recommend_section 
+- click ad from section  "" home_recommend_section - tab Tin Mới Nhất "" : home_newest_section 
+- click ad  from page/screen ""có gì hot hôm nay"" : home_viewest_ad_list
+- click ad from section ""có gì hot hôm nay"" on homepage: home_viewest_ad   
+- click ad from section ""Tin đăng dành cho bạn"" on CT homepage: ct_home_recommend_section
+- click ad from the section Search box that belong GDS category (ELT Homepage, ELT's adview,…) & Chotot Homepage: search_box
+- click ad from the section ""Tin đăng dành cho bạn"" on VEH Homepage: home_recommend_section
+- click ad from section  ""Tin đăng mới nhất"" on VEH Homepage: home_newest_section 
+- click ad  from page/screen ""Tin đăng dành cho bạn"" of VEH : home_recommend_ad_list (https://xe.chotot.com/tin-dang-danh-cho-ban?cg=2000)
+- click ad  from page/screen ""tin đăng tương tự"" of VEH ad : similar_ad_list 
+- click ad from section ""tin đăng tương tự"" of VEH adview: similar_ad 
+","item_ad_source = classifyad | stickyad | similarad | shop | publicProfile | nativead | other | cupid | personalizead | recoad | reco_listing  | delivery_ad | sticky_ad_sda
+
+Adding:
+item_event_source = 
+- click ad from listing : ad_list 
+- click ad  from page/screen ""tin đăng tương tự"" : similar_ad_list 
+- click ad from section ""tin đăng tương tự"" : similar_ad 
+- click ad from section  "" home_recommend_section - tab Dành cho bạn ""  : home_recommend_section 
+- click ad from section  "" home_recommend_section - tab Tin Mới Nhất "" : home_newest_section 
+- click ad from page/screen ""có gì hot hôm nay"" : home_viewest_ad_list
+- click ad from section ""có gì hot hôm nay"" on homepage: home_viewest_ad   
+- click ad from section ""Tin đăng dành cho bạn"" on CT homepage: ct_home_recommend_section
+- click ad from the section Search box that belong GDS category (ELT Homepage, ELT's adview,…) & Chotot Homepage: search_box
+- click ad from the section ""Tin đăng dành cho bạn"" on VEH Homepage: home_recommend_section
+- click ad from section  ""Tin đăng mới nhất"" on VEH Homepage: home_newest_section 
+- click ad  from page/screen ""Tin đăng dành cho bạn""  trên listing: ad_list _recommend(https://xe.chotot.com/tin-dang-danh-cho-ban?cg=2000)
+- click ad  from page/screen ""tin đăng tương tự"" of VEH ad : similar_ad_list 
+- click ad from section ""tin đăng tương tự"" of VEH adview: similar_ad 
+",,,,,,,,,
+4,5,Adview,Adview - login to contact,Adview - login to contact,Released,x,x,,Seller,For JOB,,,,,,,,,,,,,
+5,6,Ad Insert,Ad insert,ad_insertion_[cate/subcate]_[param_name/group_name/preview],Released,x,x,,Seller,"Section contact seller, not send as page",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.adj7hcdzwn2k,,,,,,,,,,,,
+6,7,Ad Insert,Ad insert - preview,ad_insertion_preview,Released,x,x,,Seller,,,,,,,,,,,,,,
+7,8,Login/Sign Up,Login,login,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.q7egytdexzmq,,page_type = login,,,,,,,,,,
+8,9,Login/Sign Up,Sign Up,sign_up,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.1ysff4s4ffkf,,page_type = sign_up,,,,,,,,,,
+9,10,Login/Sign Up,Input OTP,input_otp,Released,x,x,x,Buyer,Page / Screen to input OTP,,,page_type = input_otp,,,,,,,,,,
+10,11,Login/Sign Up,Create account successfully,create_ account_successfully_{sign_up_method},Released,x,x,,Buyer,"_ Page / Screen show message ""create account successfully""
+_ sign_up_method = one of these values ""phone, zalo, google, facebook, apple""
+_ for sign up via phone, only tag after otp sreen",,,page_type = create_ account_successfully,,,,,,,,,,
+11,12,Login/Sign Up,Change password successfully,change_password_successfully,Released,x,x,,Buyer,"Page / Screen show message ""change password successfully""",,,page_type = changed_password_successfully,,,,,,,,,,
+12,13,Login/Sign Up,Account is blocked,account_is_blocked,Released,x,x,,Buyer,"Page / Screen show message ""Enter wrong login information in excess of allowed X of times""",,,page_type = account_is_blocked,,,,,,,,,,
+13,14,Login/Sign Up,Exceeded number retries,exceeded_number_retries,Released,x,x,,Buyer,"Page / Screen show message ""OTP retries have been exceeded""",,,page_type = exceeded_number_retries,,,,,,,,,,
+14,15,Login/Sign Up,Forgot password,forgot_password,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.lnn9aykg6gla,,,,,,,,,,,,
+15,16,See more,See more,see_more,Released,,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.mq93puiz2ov,,,,,,,,,,,,
+16,17,Notification,Notification,notification,Released,,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.31z4nd5tcibk,,,,,,,,,,,,
+17,18,Chatroom,Chatroom list,chatroom_list,Released,,x,x,Growth,,,,,,,,,,,,,,
+18,19,Chatroom,Chatroom detail,chatroom_detail,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.v1v9pyaizpk9,,rating,,,,,,,,,,
+19,20,User Profile,User Profile,user_profile,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.ld88b39um9go,,,,,,,,,,,,
+20,21,User Profile,User Profile - Selling,user_profile_selling,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.pghc0vppctkk,,,,,,,,,,,,
+21,22,User Profile,User Profile - Sold,user_profile_sold,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.a4idojcoro8j,,,,,,,,,,,,
+22,23,Save Ad,Save Ad,save_ad,Released,x,x,x,Growth,Growth,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.a4idojcoro8j,,,,,,,,,,,,
+23,24,Save Search,Save Search,save_search,Released,x,x,x,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.xgwu3n1dqv8w,,,,,,,,,,,,
+24,,Friends,Friends List,friends_list,Released,,,x,Buyer,"Page/Screen ""danh sách bạn bè""",,,,,,,,,,,,,
+25,25,Friends,Friends - Followers,friends_followers,Released,x,x,,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.uo1tlc14s04e,,,,,,,,,,,,
+26,26,Friends,Friends - Following,friends_followings,Released,x,x,,Growth,,,,,,,,,,,,,,
+27,27,Friends,Friends - Find friends,friends_findfriends,Released,x,x,x,Growth,"Page/Screen ""tìm thêm bạn mới"", ""tìm bạn từ facebook"" , ""tìm bạn từ danh bạ""",,,,,,,,,,,,,
+28,28,Gamification,Rewards - Homepage,rewards_homepage,Released,x,x,x,Growth,"Page/Screen ""chợ tốt ưu đãi""","https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.sonl7yb48ivt
+https://701search.atlassian.net/wiki/spaces/PROD/pages/2641101673/ChoTot+Loyalty+ChoTot+Rewards+-+2022",,,,,,,,,,,,
+29,29,Gamification,Rewards - Reward details,rewards_detail,Released,x,x,x,Growth,"Page/Screen ""chi tiết ưu đãi"" (this screen will be shown after clicking a reward on screen ""chợ tốt ưu đãi"")",,,,,,,,,,,,,
+30,30,Gamification,Rewards - My Point,rewards_mypoint,Released,x,x,x,Growth,"Page/Screen ""điểm tốt của tôi"" (this screen will be shown after clicking ""điểm tốt"" on screen ""Thêm"")",,,,,,,,,,,,,
+31,31,Gamification,Rewards - Hunt Diem Tot,rewards_hunt,Released,x,x,x,Growth,"Page/Screen ""săn điểm tốt"" (this screen will be shown after clicking button ""săn điểm"" on screen ""điểm tốt của tôi"")",,,,,,,,,,,,,
+32,31,Gamification,Rewards - My Rewards,rewards_myrewards,Added,x,x,x,Growth,"Page/Screen ""Ưu đãi của tôi"" (this screen will be shown after clicking button Chợ Tốt Ưu Đãi)",https://701search.atlassian.net/wiki/spaces/PROD/pages/2641101673/ChoTot+Loyalty+ChoTot+Rewards+-+2022,,,,,,,,,,,,
+33,31,Gamification,Rewards - By Cate,rewards_bycate,Added,x,x,x,Growth,Page/Screen vouchers by cate (this screen will be shown after clicking any cate in Chợ Tốt Ưu Đãi),https://701search.atlassian.net/wiki/spaces/PROD/pages/2641101673/ChoTot+Loyalty+ChoTot+Rewards+-+2022,,,,,,,,,,,,
+34,32,Gamification,Deal Hunting,deal_hunting,Released,x,,,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.o572h66b9ai2,,,,,,,,,,,,
+35,33,Edit Profile,Edit Profile,edit_profile,Released,x,x,x,Growth,"Page/Screen ""cài đặt tài khoản"" ",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.vcbzuier3kw5,,,,,,,,,,,,
+36,34,Gamification,Lucky Wheel - Homepage,luckywheel_homepage,Released,x,,,Growth,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.sfybiw1kxcwh,,,,,,,,,,,,
+37,35,Gamification,Lucky Wheel - Mission,luckywheel_mission,Released,x,,,Growth,,,,,,,,,,,,,,
+38,36,Gamification,Lucky Wheel - My Prize,luckywheel_prize,Released,x,,,Growth,,,,,,,,,,,,,,
+39,37,Gamification,Lucky Wheel - T&C,luckywheel_tc,Released,x,,,Growth,,,,,,,,,,,,,,
+40,38,Dashboard,Dashboard,private_dashboard,Released,x,x,x,Revenue,"Page/Screen ""quản lý tin đăng"" ",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.edrm6iak7t5o,,,,,,,,,,,,
+41,39,Dashboard,Dashboard - Published,private_dashboard_published,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+42,40,Dashboard,Dashboard - Refused,private_dashboard_refused,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+43,41,Dashboard,Dashboard - Unpaid,private_dashboard_unpaid,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+44,42,Dashboard,Dashboard - Other,private_dashboard_other,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+45,43,Dashboard,Shop Dashboard,shop_dashboard,Released,x,x,x,Revenue,,,,,,,,,,,,,,
+46,44,Dashboard,Shop Dashboard - Published,shop_dashboard_published,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+47,45,Dashboard,Shop Dashboard - Shop Accepted,shop_dashboard_shop_accepted,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+48,46,Dashboard,Shop Dashboard - Other,shop_dashboard_other,Released,x,x,,Customer,All categories,,,,,,,,,,,,,
+49,47,Shop,Shop Directory,shop_directory,Released,,,x,Revenue,"PTY,ELT",,,,,,,,,,,,,
+50,48,Shop,Shop Front,shop_front,Released,x,x,x,Customer,,https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.r2cmp4io8xvg,,,,,,,,,,,,
+51,49,Shop,Shop Create,shop_create,Released,x,x,x,Customer,,,,,,,,,,,,,,
+52,50,Payment,POS,pos,Released,x,x,x,Customer,"Page/Screen ""bán nhanh hơn"" (This screen has 2 entry points
+1. after inserting ad successfully
+2. click ""bán nhanh hơn"" at tab ""đang hiển thị"" on the screen"" quản lý tin"")",,,{ad_id},{item_id},,,,,,,,,
+53,51,Payment,Checkout,checkout,Released,x,x,,Customer,Need to work with Phat for page name,,,,,,,,,,,,,
+54,52,Payment,Checkout Cart,checkout_cart ,Released,,x,x,Customer,When user clicks pay now to go to checkout page from sell_faster,,,,,,,,,,,,,
+55,53,Payment,Checkout Topup,checkout_topup ,Released,,x,x,Customer, When user goes to checkout page from topup DT ,,,,,,,,,,,,,
+56,54,Payment,Order History,order_history,Released,x,x,x,Customer,,,,,,,,,,,,,,
+57,55,Payment,My Card,my_card,Released,x,x,,Customer,,,,,,,,,,,,,,
+58,56,SSA,SSA Campaign,ssa_campaign,Released,x,x,,Customer,,,,,,,,,,,,,,
+59,57,SSA,SSA Campaign - Create,ssa_campaign_create,Released,x,x,,Customer,,,,,,,,,,,,,,
+60,58,Dong Tot,DT Balance,dt_balance,Released,x,x,x,Customer,"Add more parameter: 
+{event_source}",,,- event_source,,,,,,,,,,
+61,59,Dong Tot,DT Checkout,dt_checkout,Released,x,x,,Customer,Need to work with Phat for page name,,,,,,,,,,,,,
+62,60,Dong Tot,DT History,dt_history,Released,x,x,,Customer,Need to work with Phat for page name,,,,,,,,,,,,,
+63,61,Rating,Rating Buyer,rating_form_buyer,Released,,,x,UAM,,,,,,,,,,,,,,
+64,62,Rating,Rating Seller,rating_form_seller,Released,,,x,UAM,,,,,,,,,,,,,,
+65,63,Rating,Rating Public,rating_public,Released,,,=,Seller,,,,,,,,,,,,,,
+66,64,Advanced Filter,Advanced filter,advanced_filter,Released,,,x,Seller,,,,,,,,,,,,,,
+67,65,Revelio,Revelio,revelio,Released,,x,x,Seller,"Only available on iOS: screen ""Bán đồ quanh bạn""",,,,,,,,,,,,,
+68,66,Revelio,Revelio - Gallery images,revelio_gallery,Released,,x,x,Seller,,,,,,,,,,,,,,
+69,67,Revelio,Revelio - Draft ad,revelio_draft,Released,,x,x,Seller,,https://www.sketch.com/s/59806155-515f-4a94-8d9a-2aefb2e86e0c/a/oA5a7Y,,,,,,,,,,,,
+70,68,Revelio,Revelio _ Photo review,revelio_photo_review,Released,,x,x,Seller,,https://www.sketch.com/s/59806155-515f-4a94-8d9a-2aefb2e86e0c/a/Vy8WVo,,,,,,,,,,,,
+71,69,Job CV,Job Full CV - Edit,job_full_cv_edit,Released,x,x,x,Seller,"For JOB, when user has have Full CV before",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#heading=h.67ezknetvg28,,,,,,,,,,,,
+72,70,Job CV,Job Full CV - View,job_full_cv_view,Released,x,x,x,Seller,"For JOB, when user has have Full CV before",,,,,,,,,,,,,
+73,71,Adview,Adview - Section,adview_[cate/subcate],Released,x,x,,Growth,"Incorrect naming on production
+
+add 3 dataLayers/parameters more are ""keyword"", ""position"", ""ad_source"" at the ad_view page/screen after the user clicks an ad on the ad_list page/screen which these pages/screens included the ads that relative to the user's keywords
+- {feature_label} to identify label name of feature that added on adview. For Job, adview constain label ""Gấp"", feature_label= 'urgent_jobs'",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#bookmark=id.4k5hpvnk6zyx,,"
+- keyword = {keyword}
+- position = {position}
+- ad_source = {ad_source}
+- feature_label= {feature_label}
+
+adding: 
+event_source = 
+with user comes from user ad dashboard -> ""user_ad_dashboard_listing""
+",,,,,,,,,,
+74,72,Job CV,Job mini CV - Popup,job_mini_cv_popup,Released,x,x,,Seller,For JOB,,,,,,,,,,,,,
+75,73,Job CV,Job mini CV - Edit,job_mini_cv_edit,Released,x,x,,Seller,For JOB,,,,,,,,,,,,,
+76,74,Job CV,Job mini CV - Success,job_mini_cv_success,Released,x,x,,Seller,For JOB,,,,,,,,,,,,,
+77,75,Rating,Rating input,rating_form_buyer,Released,x,x,,Seller,form to rate a buyer,https://prnt.sc/s757c2,,,,,,,,,,,,
+78,76,Rating,Rating input,rating_form_seller,Released,x,x,,Seller,form to rate a seller,,,,,,,,,,,,,
+79,77,Job CV,Job Full CV - Edit,job_full_cv_create,Released,x,x,x,Seller,"For JOB, when user don't have Full CV before",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#heading=h.67ezknetvg28,,,,,,,,,,,,
+80,78,Listing,Project Listing,pty_project_listing_view,Released,x,x,,d,PTY Project tab,https://nha.chotot.com/toan-quoc/du-an,,"region, area",,,,,,,,,,
+81,79,Listing,Listing - Ad List,listing_[cate/subcate]_[if rent available: sell/rent],Released,x,,x,Customer,Section of listing ads,,,cd168,,,,,,,,,,
+82,80,PTY  Homepage,PTY  Homepage,pty_homepage,Released,x,x,x,Buyer,New homepage of PTY,https://nha.chotot.com/,,"page_type
+region_id
+region_name
+category_id=1000",,,,,,,,,,
+83,81,Personalize,Personalize,personalize_page,Reviewed,"x",x,,Buyer,show list of personalized ads by category,,,"sub_category_id
+sub_category_name
+category_id
+category_name
+page_type",,,,,,,,,,
+84,82,PTY Project,PTY project detail,pty_project_detail,Released,x,x,x,Buyer,Pop-up screen to show project detail info,,,"page_type
+category_id
+project_id",,,,,,,,,,
+85,83,Rating,Rating detail,rating_detail,Released,x,x,x,Seller,Detail of a rating,https://www.sketch.com/s/989e13a4-dc69-4ee1-bf8c-3a388fcdc236/a/z48qyb,,,,,,,,,,,,
+86,84,Delivery,Create Order,order_create,Released,x,x,,Seller,Create/Edit a delivery order,https://www.sketch.com/s/ab72d6a7-c79a-43ef-9476-1f68b5352dcc/a/Dg1kOJ,,,,,,,,,,,,
+87,85,Delivery,View Order,order_view,Released,x,x,,Seller,View only screen ,https://www.sketch.com/s/ab72d6a7-c79a-43ef-9476-1f68b5352dcc/a/ZkQ32a,,,,,,,,,,,,
+88,86,Delivery,Oder Cancel,order_cancel,Released,x,x,,Seller,Screen to show Delivery cancel reason,https://www.sketch.com/s/ab72d6a7-c79a-43ef-9476-1f68b5352dcc/a/veZ7dn,,,,,,,,,,,,
+89,87,Delivery,Oder Address,order_address,Released,x,x,,Seller,Add Recipient's address ,https://www.sketch.com/s/ab72d6a7-c79a-43ef-9476-1f68b5352dcc/a/OvQ7pk,,,,,,,,,,,,
+90,88,Error,Error,error_or_empty,Released,x,x,,Buyer,Screen to error or empty states,https://701search.atlassian.net/wiki/spaces/BW/pages/916947919/Design+Not+Found+and+Empty+States,,"Add key: error_type = {error code} to event page_metadata as below:
+list of values: 
+error        
+ad_not_found
+maintenance
+network_error
+request_timeout
+search_no_found_filter
+search_no_found_keyword",,,,,,,,,,
+91,89,Rating,List of Ratings,rating_list,Released,x,x,x,Seller,Page list of ratings on profile,https://www.sketch.com/s/989e13a4-dc69-4ee1-bf8c-3a388fcdc236/a/Kopw8D,,,,,,,,,,,,
+92,90, Appointment,Create Appointment ,create_appointment,Released,x,x,,Seller,Create a new appointment page,,,,,,,,,,,,,
+93,91, Appointment,View Appointment ,view_appointment,Released,x,x,,Seller,View appointment page,,,,,,,,,,,,,
+94,92,Job CV,Curriculum Vitae,curriculum_vitae,Released,x,x,x,Seller, Apply mini CV for Job Ad,,,,,,,,,,,,,
+95,93,Dashboard,Dashboard - Drafts,private_dashboard_drafts,Released,x,x,,Seller,All categories/List of drafts were saved,https://www.sketch.com/s/7fbfc253-625b-4aa9-885a-1e87acd73c1d/a/2oy8zG,,,,,,,,,,,,
+96,94,VEH Homepage,VEH Homepage,veh_homepage,Released,x,x,x,Buyer,New homepage of VEH,,,category_id=2000,,,,,,,,,,
+97,95,PTY Market Price,PTY Market Price - Landing,pty_market_price_landing,Released,x,x,x,Buyer,Landing page of PTY Market Price,,https://miro.com/app/board/o9J_lc87wB4=/,"page_type = pty_market_price_landing
+category_id=1000",,,,,,,,,,
+98,96,PTY Market Price,PTY Market Price - Detail,pty_market_price_detail,Released,x,x,x,Buyer,Detail page of PTY Market Price (at district level),,,"category_id, sub_category_id
+region_id
+area_id
+page_type = pty_market_price_detail",,,,,,,,,,
+99,97,Vertical Blog,Vertical Blog Listing,vertical_blog,Released,x,,,Buyer,All pages of Blog (excluding Post),,,"category_id: Nhà=1000, Xe=2000
+page_type: blog_homepage, blog_main_cate, blog_sub_cate, blog_tags
+content_topic: {main_cate_name}|{sub_cate_name}|{tags_name}",,,,,,,,,,
+100,98,Vertical Blog,Vertical Blog Article,vertical_blog_article,Released,x,,,Buyer,Post of Blog,,,"category_id (Nhà=1000, Xe=2000)
+page_type: blog_article",,,,,,,,,,
+101,99,MKT Landing Page,MKT Landing Page,mkt_landing_page,Released,x,,,,,,,page_type: mkt_landing_page,,,,,,,,,,
+102,100,Region filter,Region filter Level 1,region_filter_level_1,Released,,x,x,Buyer,"Region filter, level region",,,"page_type = region_filter_level_1
+category_id={category_id}
+sub_category_id={sub_category_id}
+firebase_screen = region_filter_level_1",,,,,,,,,,
+103,101,Region filter,Region filter Level 2,region_filter_level_2,Released,,x,x,Buyer,"Region filter, level district",,,"page_type = region_filter_level_2
+category_id={category_id}
+sub_category_id={sub_category_id}
+firebase_screen = region_filter_level_2",,,,,,,,,,
+104,102,Region filter,Region filter Level 3,region_filter_level_3,Released,,x,x,Buyer,"Region filter, level ward",,,"page_type = region_filter_level_3
+category_id={category_id}
+sub_category_id={sub_category_id}
+firebase_screen = region_filter_level_3",,,,,,,,,,
+105,103,Light Ad,Light Ad - Title Page,light_ad_title,Released,x,x,,Seller,"""Light Ad"" is the name of new version of ""Insert Ad"". Page title --> question ""what do you want to sell?""",,,,,,,,,,,,,
+106,103,Light Ad,Light Ad - Cate and SubCate,light_ad_cates,Released,x,x,x,Seller,"""Light Ad"" is the name of new version of ""Insert Ad"". Cates --> Cate and subcate selection",,,,,,,,,,,,,
+107,104,Light Ad,Light Ad - One Page,light_ad_onepage,Released,x,x,x,Seller,"""Light Ad"" is the name of new version of ""Insert Ad"". One Page --> all params",,,,,,,,,,,,,
+108,105,Light Ad,Light Ad - Preview,light_ad_preview,Released,x,x,x,Seller,Preview as an AdView,,,,,,,,,,,,,
+109,106,Light Ad,Light Ad - Save Draft,light_ad_draft_popup,Released,x,x,,Seller,"Pop up ask seller that ""Save draft or not"" when they close light ad",,,,,,,,,,,,,
+110,107,Bank Loan,Loan Eligibility,loan_eligibility,Released,x,x,,Customer,An independent page for loan buyer to submit their personal information to request loan,,,category_id={category_id},,,,,,,,,,
+111,108,Job Homepage,Job Homepage,job_homepage,Released,x,x,x,Job,New homepage of Job,,,"page_type =  job_homepage
+category_id= 13000
+region_id = {region_id}
+region_name = {region_name}",,,,,,,,,,
+112,109,Business Account Hierarchy,Business Account - Registration - Phone check,biz_account_register-validatephone,Added,x,,,Customer,Account hierarchy registration flow - step 1: validate phone number,,,,,,,,,,,,,
+113,110,Business Account Hierarchy,Business Account - Registration - Upload Document,biz_account_register-uploaddocument,Added,x,,,Customer,Account hierarchy registration flow - step 2: upload documents,,,,,,,,,,,,,
+114,111,Business Account Hierarchy,Business Account - Registration - Add Business Profile,biz_account_register-addbusinessprofile,Added,x,,,Customer,Account hierarchy registration flow - step 3: add some business profile details,,,,,,,,,,,,,
+115,112,Business Account Hierarchy,Business Account - Registration - Confirmation,biz_account_register-confirmation,Added,x,,,Customer,Account hierarchy registration flow - step 4: show popup for a successful registration ,,,,,,,,,,,,,
+116,113,Business Account Hierarchy,Business Account - Dashboard,biz_account_dashboard,Added,x,,,Customer,When user visits the business account dashboard,,,,,,,,,,,,,
+117,114,Business Account Hierarchy,Business Account - Dashboard - Account Settings,biz_account_dashboard_settings_account,Added,x,,,Customer,When user accesses to the business account settings page for childs account,,,,,,,,,,,,,
+118,115,Business Account Hierarchy,Business Account - Dashboard - Limitation Settings,biz_account_dashboard_settings_limitation,Added,x,,,Customer,When user accesses to the business account settings page for limitation configure,,,,,,,,,,,,,
+119,,Business Account Hierarchy,Business Account - Dashboard - Dongtot transfer,biz_account_dashboard_dongtot_transfer,Added,x,,,Customer,When user accesses to the business account transfer dongtot page for transfer dongtot to child account,,,,,,,,,,,,,
+120,116,Business Account Hierarchy,Business Account - Dashboard - Order History,biz_account_dashboard_orderhistory,Added,x,,,Customer,When user accesses to the business account settings page for order history,,,,,,,,,,,,,
+121,,Business Account Hierarchy,Business Account - Dashboard - Spending,biz_account_dashboard_spending,Added,x,,,Customer,When user accesses to the business account settings page for spending report ,,,,,,,,,,,,,
+122,117,Adstats,Adstats ,adstats,Reviewed,x,,x,Revenue,"When users click on ""Xem thống kê"" to view Adstats page ",,,,,,,,,,,,,
+123,118,Escrow,Buyer deposit order listing,buyer_deposit_order_listing,Reviewed,x,x,,Buyer,When buyer accesses to order management page,,,,,,,,,,,,,
+124,119,Escrow,Seller deposit order listing,seller_deposit_order_listing,Reviewed,x,x,,Buyer,When seller accesses to order management page,,,,,,,,,,,,,
+125,120,Escrow,Buyer deposit order detail,buyer_deposit_order_detail,Reviewed,x,x,,Buyer,When user accesses to deposit order detail page,,,,,,,,,,,,,
+126,121,Escrow,Seller deposit order detail,seller_deposit_order_detail,Reviewed,x,x,,Buyer,When user accesses to deposit order detail page,,,,,,,,,,,,,
+127,122,User Profile,Payout account,payout_account,Released,x,x,x,Recommerce,When user accesses to payout accounts page in user profile,,,,,,,,,,,,,
+128,123,User Profile,Payout account - Input phone number momo,input_phone_number_momo,Released,x,x,x,Recommerce,,,,,,,,,,,,,,
+129,124,User Profile,Payout account - Input phone number payoo,input_phone_number_payoo,Released,x,x,x,Recommerce,,,,,,,,,,,,,,
+130,125,Escrow,Payout account - Input phone number - input otp,seller_onboarding,Released,x,x,,Buyer,When user accesses to any entry point of seller escrow,,,,,,,,,,,,,
+131,126,Escrow,Buyer onboarding,buyer_onboarding,Released,x,x,,Buyer,When user accesses to any entry point of buyer escrow,,,,,,,,,,,,,
+132,127,Escrow,Deposit payment methods selection,deposit_payment_methods,Released,,,,,,,,,,,,,,,,,,
+133,128,Job CV,Job Full CV - Create,job_full_cv_create,Released,x,x,x,Job,"For JOB, when user don't have Full CV before",https://docs.google.com/document/d/1kvoVOfZ9Y3RKXZHGo8-V17zF2rnmkJg5Qsu56l6PkOs/edit#heading=h.67ezknetvg28,,,,,,,,,,,,
+134,129,Dashboard - Refused,Dashboard - Detail Refused Ad,detail_refused_ad,Released,x,x,x,Seller,"page/screen ""Tin đăng bị từ chối"" (When user click to view a specific refused ad)",,,,,,,,,,,,,
+135,130,Escrow,Input buyer info,input_buyer_info,,x,x,,Buyer,When user click to buy something and requested to input their information,,,,,,,,,,,,,
+136,131,Escrow,Escrow_Checkout,escrow_check_out,,x,x,,Buyer,replaced by buynow_check_out in GA4,,,,,,,,,,,,,
+137,132,Escrow,Escrow_Payment_Result,escrow_payment_pesult,,x,x,,Buyer,,,,,,,,,,,,,,
+138,133,AdView,Popup Report Bad Ad,popup_report_bad_ad,,x,x,,Seller,When user click to report bad ad,https://701search.atlassian.net/wiki/spaces/WS/pages/2309980163/Revamp+Report+Ad,,,,,,,,,,,,
+139,134,AdView,Popup Report Sold Ad,popup_report_sold_ad,,x,x,x,Seller,,https://701search.atlassian.net/wiki/spaces/WS/pages/2309980163/Revamp+Report+Ad,,,,,,,,,,,,
+140,135,Adview,Similar Ads,similar_ads,Released,x,x,x,Buyer,When user click to report sold ad,A/B testing - Enable Similar Ad In Adview,,,,,,,,,,,,
+141,136,Phone Home Screen,Phone Home Screen,phone_home_screen,Deprecated,,x,,Seller,,,,,,,,,,,,,,
+142,137,Adview,Tool and service,tool_and_service,Added,x,x,,Buyer,"When user click on section ""Các dịch vụ tiện ích"" on Adview (Adview Redesign)",VEH revamp adview,,,,,,,,,,,,
+143,138,delivery,buyer order tracking,buyer_order_tracking,Added,x,x,,Buyer,,,,,,,,,,,,,,
+144,139,delivery,seller order tracking,seller_order_tracking,Added,x,x,,Buyer,,,,,,,,,,,,,,
+145,140,delivery,delivery order,delivery_order,Added,x,x,x,Recommerce,,,,,,,,,,,,,,
+146,141,delivery,delivery product info,delivery_product_info,Added,x,x,x,Recommerce,,,,,,,,,,,,,,
+147,142,Zero Deposit,input_contract_info ,input_contract_info ,Released,x,x,x,PTY,,,,,,,,,,,,,,
+148,143,Zero Deposit,input_property_address,input_property_address,Released,x,x,x,PTY,,,,,,,,,,,,,,
+149,144,Zero Deposit,process_payment,process_payment,,,,x,Revenue,,,,,,,,,,,,,,
+150,145,Zero Deposit,success_payment,success_payment,,,,x,Revenue,,,,,,,,,,,,,,
+151,146,Zero Deposit,accept_onboarding,accept_onboarding,,,,,,,,,,,,,,,,,,,
+152,147,Chotot Feed,Chotot Feed,chotot_feed,Released,,x,x,Buyer,"When new page (10 ads) have been loaded, any events, ex: click to Dạo Chợ, allow location, browse new page",Page = 10 ads,,"impression_ad_ids {note: 10 ad_ids}
+page_type = chotot_feed",,,,,,,,,,
+153,148,Chotot Feed,Chotot Feed,chotot_feed_discover,Reviewed,,x,,Buyer,"When new page (10 ads) have been loaded, any events, ex: click to Dạo Chợ, allow location, browse new page",Page = 10 ads,,impression_ad_ids {note: 10 ad_ids}page_type = chotot_feed,,,,,,,,,,
+154,149,Chotot Feed,Chotot Feed,chotot_feed_nearby,Reviewed,,x,,Buyer,"When new page (10 ads) have been loaded, any events, ex: click to Dạo Chợ, allow location, browse new page",Page = 10 ads,,impression_ad_ids {note: 10 ad_ids}page_type = chotot_feed,,,,,,,,,,
+155,150,Chotot Feed,Chotot Feed,chotot_feed_foryou,Reviewed,,x,,Buyer,"When new page (10 ads) have been loaded, any events, ex: click to Dạo Chợ, allow location, browse new page",Page = 10 ads,,impression_ad_ids {note: 10 ad_ids}page_type = chotot_feed,,,,,,,,,,
+156,151,Chotot Feed,Location Request,location_request,Released,,x,,Buyer,When Chotot ask for location access from Users,,,,,,,,,,,,,
+157,152,Job Blog,Job Blog homepage,Job_blog_homepage,,x,x,,"Job",,,,"page_type =  job_blog_homepage
+category_id= 13000",,,,,,,,,,
+158,153,Job Blog,Job Blog Topic,Job_blog_mini_topic,,x,x,,"Job","when user click to the specific link content of the blog page
+ex: 
+https://www.vieclamtot.com/kinh-nghiem/viec-lam-tet-2022-tphcm.html",,,"page_type =  job_blog_mini_topic
+category_id= 13000",,,,,,,,,,
+159,154,Job Blog,Job Blog sub homepage,Job_blog_meo_tim_viec,,x,x,,"Job","https://www.vieclamtot.com/kinh-nghiem/cam-nang-tim-viec
+when user click to the above link",,,"page_type =  job_blog_meo_tim_viec
+category_id= 13000",,,,,,,,,,
+160,155,Job Blog,Job Blog sub homepage,Job_blog_di_lam,,x,x,,"Job","https://www.vieclamtot.com/kinh-nghiem/chuyen-di-lam
+when user click to the above link",,,"page_type =  job_blog_di_lam
+category_id= 13000",,,,,,,,,,
+161,156,Job Blog,Job Blog sub homepage,Job_blog_tin_tuc_moi,,x,x,,"Job","https://www.vieclamtot.com/kinh-nghiem/tin-tuc-moi
+when user click to the above link",,,"page_type =  job_blog_tin_tuc_moi
+category_id= 13000",,,,,,,,,,
+162,157,Job Blog,Job Blog sub homepage,Job_blog_meo_tuyen_dung,,x,x,,"Job","https://www.vieclamtot.com/kinh-nghiem/cam-nang-tim-viec
+when user click to the above link",,,"page_type =  job_blog_meo_tuyen_dung
+category_id= 13000",,,,,,,,,,
+163,158,Job Blog,Job Blog sub homepage,Job_blog_reports,,x,x,,"Job",...to be released,,,"page_type =  job_blog_reports
+category_id= 13000",,,,,,,,,,
+164,159,Project,Project homepage,pty_project_homepage,Reviewed,x,x,x,PTY,,,,page_type = pty_project_landing_page,,,,,,,,,,
+165,160,Project,Project listing,pty_project_listing,Reviewed,x,x,x,PTY,,,,"page_type = pty_project_listing
+sub_category_id
+region_id
+area_id
+ad_type",,,,,,,,,,
+166,161,Project,Project detail,pty_project_detail,Reviewed,x,x,x,PTY,,,,page_type = pty_project_detail,,,,,,,,,,
+167,162,Escrow,Escrow Balance,escrow_balance,Reviewed,x,x,,Recommerce (GDS),,,,page_type = escrow_payment,,,,,,,,,,
+168,163,Seller Referral,Seller Referrer,seller_referrer,,,x,,Seller,"Screen ""Mời bạn bè"" displays, when user click to entry point ""Giới thiệu bạn bè"" or  click to tab ""Mời bạn bè""",,,page_type = seller_referrer,,,,,,,,,,
+169,164,Seller Referral,Seller Referee,seller_referee,,,x,,Seller,"Screen ""Nhập mã giới thiệu"" displays, when user click to tab ""Nhập mã giới thiệu""",,,page_type = seller_referee,,,,,,,,,,
+170,,Seller Referral,Referral,referral,Reviewed,,,x,Seller,"Page / Screen ""Giới thiêụ bạn bè""",,,,,,,,,,,,,
+171,165,Region filter,Nearby Filter,nearby_filter,Added,,x,"x",Buyer,"Screen ""Tìm kiếm quanh bạn"" 
+Screen sau khi users click ""Nhập địa chỉ và khoảng cách"" trên region filter, sau đó click ""Sử dụng vị trí của tôi"" thì sẽ ra đc màn hình trên",,,page_type = nearby_filter,,,,,,,,,,
+172,166,Dashboard,Recruiter dashboard,job_recruiter_dashboard,Added,"x",,,Seller,"When User access to ""Quản lý ứng viên"" -> Dashboard serve for Recruiter to manage candidates",,,"category_id=13000
+page_type=job_recruiter_dashboard",,,,,,,,,,
+173,167,Order Recommerce,Place Prepaid Order,place_prepaid_order,Reviewed,"x",x,,Recommerce,"Prepaid order Project
+When the buyer click the "" Thanh toán"" button on the chatroom detail, then navigate buyer to the next page/screen ""Xác nhận đơn hàng"" ",,,page_type=place_prepaid_order,,,,,,,,,,
+174,168,Order Recommerce,Create Prepaid Order,create_order,Reviewed,"x",x,x,Recommerce,"Prepaid order Project
+When the seller click the "" Tạo đơn hàng"" button on the chatroom detail, then navigate seller to the next page/screen ""Tạo đơn hàng"" ",,,page_type=create_order,,,,,,,,,,
+175,169,Goods Landing Page,Goods Landing Page,goods_landing_page,Reviewed,x,,,Good,https://www.chotot.com/songmoivoidocu,,,"page_type=goods_landing_page
+category_id = 5000
+sub_category_id = null",,,,,,,,,,
+176,170,See more,Rating Page,rating_page,Added,,,,UAM,https://www.figma.com/file/IaLkQQsdBivMjicgfKeJDM/UAM---Rating-%26-Review?node-id=1082%3A22709,,,,,,,,,,,,,
+177,171,Payment,Checkout Shop,checkout_shop,Reviewed,,x,x,Transform Revenue,Checkout to open or extend shop,,,"page_type = payment_shop
+category_id","SCREEN_NAME =  checkout_shop
+SCREEN_CLASS
+page_type = payment
+page_category_id = {{category_id}}",,,,,,,,,
+178,172,Dong Tot,List Payment Store,list_payment_store,Reviewed,x,x,x,Transform Revenue,Danh sách các điểm giao dịch (page/screen),,,,,,,,,,,,,
+179,173,Payment,payment_detail,payment_detail,Reviewed,x,x,x,Transform Revenue,"Chi tiết giao dịch ( (page/screen)
+User from Lịch sử giao dich page/screen, click per item ",,,,,,,,,,,,,
+180,174,Payment,payment_result,payment_result,Reviewed,x,x,x,Transform Revenue,After payment success or fail for Buying premium service,,,,,,,,,,,,,
+181,175,Payment,payment_not_enough_dong_tot,payment_not_enough_dong_tot,Reviewed,x,x,,Transform Revenue,"""không đủ đồng tốt"" page/screen",,,,,,,,,,,,,
+182,176,Dashboard,faster_seller_multiad_service,faster_seller_multiad_service,Reviewed,x,x,x,Transform Revenue,"bán nhanh hơn page/screen
+User selected more than 1 ad and click ""Đẩy tin và tiện ích khác""",,,,,,,,,,,,,
+183,177,Business Account Hierarchy,account_hierarchy_debit,account_hierarchy_debit,Reviewed,x,x,,Transform Revenue,Tài khoản doanh nghiệp screen/page,,,,,,,,,,,,,
+184,178,Business Account Hierarchy,account_hierarchy_spending_management,account_hierarchy_spending_management,Reviewed,x,x,x,Transform Revenue,Quản lý chi tiêu screen/page,,,,,,,,,,,,,
+185,179,Business Account Hierarchy,dong_tot_transfer,dong_tot_transfer,Reviewed,x,x,x,Transform Revenue,Chuyển đồng tốt screen/page,,,,,,,,,,,,,
+186,180,Business Account Hierarchy,dong_tot_transfer_detail,dong_tot_transfer_detail,Reviewed,x,x,x,Transform Revenue,Chi tiết giao dịch - Đồng Tốt screen/page,,,,,,,,,,,,,
+187,181,PTY Bank Loan,PTY Bank Loan - Landing,pty_bank_loan_landing,Reviewed,x,x,,PTY,"Master page ""Vay mua nhà"" cho các tính năng liên quan đến vay mua nhà của PTY",,,"page_type = pty_bank_loan_landing
+category_id = 1000","SCREEN_NAME = pty_bank_loan_landing
+SCREEN_CLASS
+page_type = pty_bank_loan",,,,,,,,,
+188,182,PTY Bank Loan,PTY Bank Loan - Offers detail,pty_bank_loan_offers_detail,Reviewed,x,x,,PTY,"Users ấn vào nút ""Xem tất cả"" trong phần ""Gói vay mua nhà nổi bật"" mở ra page mới gồm tất cả các gói vay mua nhà ưu đãi hiện tại",,,"page_type = pty_bank_loan_offers_detail
+category_id = 1000","SCREEN_NAME = pty_bank_loan_offers_detail
+SCREEN_CLASS
+page_type = pty_bank_loan",,,,,,,,,
+189,183,PTY Bank Loan,PTY Bank Loan - Monthly payment,pty_bank_loan_monthly_payment,Reviewed,x,x,,PTY,"User ấn vào nút ""Xem thanh toán từng tháng"" mở ra page mới gồm kế hoạch thanh toán theo khoản vay đã lựa chọn",,,"page_type = pty_bank_loan_monthly_payment
+category_id = 1000","SCREEN_NAME = pty_bank_loan_monthly_payment
+SCREEN_CLASS
+page_type = pty_bank_loan",,,,,,,,,
+190,184,Rating,Rating Page,rating_page,Reviewed,x,x,,UAM,Đánh giá từ tôi,https://www.figma.com/file/IaLkQQsdBivMjicgfKeJDM/UAM---Rating-%26-Review?node-id=1055%3A19920,,,,,,,,,,,,
+191,185,Escrow,Checkout buy Buy Now,checkout_by_buynow,Reviewed,x,x,,Goods,Replaced by buynow_check_out in GA4,,,,,,,,,,,,,
+192,186,Subscription,Master Subscription Landing Page,master_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription,,,page_type = master_subscription_landing_page,"SCREEN_NAME = master_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription",,,,,,,,,
+193,187,Subscription,JOB Subscription Landing Page,job_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Việc làm) -> JOB Subscription Landing Page,,,"page_type = job_subscription_landing_page
+category_id = 13000","SCREEN_NAME = job_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = việc làm
+page_category_id = 13000",,,,,,,,,
+194,188,Subscription,PTY Subscription Landing Page,pty_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Bất động sản) -> PTY Subscription Landing Page,,,"page_type = pty_subscription_landing_page
+category_id = 1000","SCREEN_NAME =pty_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = bất động sản
+page_category_id = 1000",,,,,,,,,
+195,189,Subscription,ELT Subscription Landing Page,elt_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Đồ điện tử) -> ELT Subscription Landing Page,,,"page_type = elt_subscription_landing_page
+category_id = 5000","SCREEN_NAME =elt_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = đồ điện tử
+page_category_id = 5000",,,,,,,,,
+196,190,escrow,buyer_order_listing,buyer_order_listing,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+197,191,escrow,buyer_order_detail,buyer_order_detail,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+198,192,escrow,seller_order_listing,seller_order_listing,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+199,193,escrow,seller_order_detail,seller_order_detail,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+200,194,escrow,input_phone_number_momo,input_phone_number_momo,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+201,195,escrow,input_phone_number_payoo,input_phone_number_payoo,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+202,196,escrow,buynow_check_out,buynow_check_out,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+203,197,escrow,createorder_check_out,,,,,x,Recommerce,GA4,,,,,,,,,,,,,
+204,198,Seller Referral,Gift listing,gift_listing,Reviewed,,x,,Seller,"Screen ""Chọn quà tặng"" khi referrer hoặc referee click vào chọn quà",https://prnt.sc/8uxpAcOju7A_,,page_type = gift_listing,"SCREEN_NAME =gift_listing
+SCREEN_CLASS
+page_type = seller_referral",,,,,,,,,
+205,199,Seller Referral,Referee listing,referee_listing,Reviewed,,x,,Seller,"Screen ""Thành tích và quà tặng"" khi referrer click vào ""Tất cả"" trong section ""Thành tích và quà tặng"" tại màn home ",https://prnt.sc/vbO7Fho8hg9s,,page_type = referee_listing,"SCREEN_NAME =referee_listing
+SCREEN_CLASS
+page_type = seller_referral",,,,,,,,,
+206,200,Seller Referral,Select gift successfully,select_gift_successfully,Reviewed,,x,,Seller,"Screen ""Chúc mừng"" user chọn quà thành công",https://prnt.sc/3nPEFjkDDlRE,,page_type = select_gift_successfully,"SCREEN_NAME = received_gift_successfully
+SCREEN_CLASS
+page_type = seller_referral",,,,,,,,,
+207,201,Seller Referral,Receive gift successfully,received_gift_successfully,Reviewed,,x,,Seller,"Screen ""Chúc mừng"" user nhận quà thành công",,,,,,,,,,,,,
+208,202,Ad life circle,Ad expire information,ad_expire_information,Reviewed,x,x,x,Seller,"Screen ""Tin sắp hết hạn"" Thông tin chi tiết về Ad sắp bị xoá
+Click on the notification inform ads which nearly expire, then this screen will be appeared",,,page_type = ad_expire_information,"SCREEN_NAME = ad_expire_information
+SCREEN_CLASS
+page_type = ad_life_circle",,,,,,,,,
+209,203,Warning,Warning,warning,Reviewed,x,,,Platform,Screen to inform user when they click on URL which is outside of CT domain so that I can aware potential harm.,https://701search.atlassian.net/wiki/spaces/PROD/pages/2702966883/Phase+2+-+Update+stronger+warning+message+in+middle+page,,page_type = warning,,,,,,,,,,
+210,204,Subscription,Dashboard - Lead management,dashboard_lead_management,Reviewed,x,x,x,Revenue,"Screen ""Quản lý danh sách liên hệ"" for user to manage their list of buyers (as a phonebook) who need to be consulted and leave their contact information.  ",https://701search.atlassian.net/wiki/spaces/PROD/pages/2612168254/MVP+NEW+LEAD+TYPE+FOR+PTY+SUBSCRIPTION,,"page_type = dashboard_lead_management
+category_id = {category_id}
+
+event_source includes:
++) shortcut_user_ad_dashboard nếu user tới từ shortcut Danh Sách Liên Hệ trên User Ad Dashboard.
++) subscription_management nếu user tới từ button Quản Lý Khách Hàng từ trang quản lý gói Pro
++) sidebar_gds_seller_center nếu user tới từ sidebar Quản Lý Khách Hàng trong Seller Center của GDS
++) unknown nếu source chưa được define","SCREEN_NAME = dashboard_lead_management 
+SCREEN_CLASS
+page_type = subscription
+page_category_id
+
+item_event_source",,,,,,,,,
+211,205,create cod order,Create COD order,create_cod_order,Added,x,x,x,Recommerce,seller creates COD order in Chatview,,,,,,,,,,,,,
+212,206,Listing,Listing - Ad List,listing_[cate/subcate]_loan,Reviewed,x,x,x,PTY,"PTY loan listing
+e.g. listing_1010_loan",,,"
+page_type = ad_list
+category_name
+sub_category_name
+category_id
+sub_category_id
+region_id
+region_name
+area_id
+area_name
+ward_id
+ward_name","SCREEN_NAME 
+SCREEN_CLASS
+page_type = ad_list
+page_category
+page_sub_category_L1
+page_category_id
+page_sub_category_L1_id
+page_region_id
+page_area_id
+page_ward_id
+filter_used",,,,,,,,,v
+213,207,PTY Bank Loan,PTY Bank Loan - Detail Loan Package,pty_bank_loan_detail_loan_package,Reviewed,x,x,x,PTY,"User ấn vào xem thông tin chi tiết về từng gói vay trong screen/page ""Gói vay mua nhà""  hoặc screen/page pty_bank_loan_landing của feature Home Loan của PTY",https://701search.atlassian.net/wiki/spaces/PROD/pages/2577629390/Prd+-+Fina+Master+Page,,"page_type = pty_bank_loan_detail_loan_package
+category_id = 1000","SCREEN_NAME = pty_bank_loan_detail_loan_package
+SCREEN_CLASS
+page_type = pty_bank_loan",,,,,,,,,
+214,208,Subscription,VEH Subscription Landing Page,veh_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Xe cộ) -> VEH Subscription Landing Page,,,"page_type = veh_subscription_landing_page
+category_id = 2000","SCREEN_NAME = veh_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = xe cộ
+page_category_id = 2000",,,,,,,,,
+215,209,Dashboard,Job Save Application,job_save_application,Reviewed,"x",,,Seller,"When User access to ""Quản lý ứng viên"" -> Click entry point ""Ứng viên đã lưu""",,,"category_id=13000
+page_type=job_save_application",,,,,,,,,,
+216,210,Subscription,PET Subscription Landing Page,pet_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Thú cưng) -> PET Subscription Landing Page,,,"page_type = pet_subscription_landing_page
+category_id = 12000","SCREEN_NAME = pet_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = thú cưng
+page_category_id = 12000",,,,,,,,,
+217,211,Subscription,FRIDGE Subscription Landing Page,fridge_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Điện lạnh) -> FRIDGE Subscription Landing Page,,,"page_type = fridge_subscription_landing_page
+category_id = 9000","SCREEN_NAME = fridge_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = tủ lạnh, máy lạnh, máy giặt
+page_category_id = 9000",,,,,,,,,
+218,212,Subscription,FURNITURE Subscription Landing Page,furniture_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Nội thất) -> FURNITURE Subscription Landing Page,,,"page_type = furniture_subscription_landing_page
+category_id = 14000","SCREEN_NAME = furniture_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = đồ gia dụng, nội thất, cây cảnh
+page_category_id = 14000",,,,,,,,,
+219,213,Subscription,CAR Subscription Landing Page,car_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Ô tô) -> CAR Subscription Landing Page,,,"page_type = car_subscription_landing_page
+category_id = 2000
+sub_category = 2010","SCREEN_NAME = car_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = xe cộ
+page_category_id = 2000
+page_sub_category_L1 = ô tô
+page_sub_category_L1_id = 2010",,,,,,,,,
+220,214,Subscription,MOTORBIKE Subscription Landing Page,motorbike_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click Xe máy) -> MOTORBIKE Subscription Landing Page,,,"page_type = motorbike_subscription_landing_page
+category_id = 2000
+sub_category = 2020","SCREEN_NAME = motorbike_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category = xe cộ
+page_category_id = 2000
+page_sub_category_L1 = xe máy
+page_sub_category_L1_id = 2020",,,,,,,,,
+221,215,Dashboard,Dashboard - Expired,private_dashboard_expired,Reviewed,x,,,Revenue,Private Dashboard -> Tab 'Hết hạn',,,page_type = private_dashboard_expired,,,,,,,,,,
+222,216,Sell to ChoTot,Instant Sell,instant_sell,Added,,,,Recommerce,"When user accesses to ""Thu mua điện thoại""",,,page_type = sell_to_chotot_instant_sell,"SCREEN_NAME = sell_to_chotot_instant_sell
+SCREEN_CLASS
+page_type = sell_to_chotot_instant_sell",,,,,,,,,
+223,217,Sell to ChoTot,Search Model,search_model,Added,,,,Recommerce,When user click search box to search mobile models,,,page_type = sell_to_chotot_search_model,"SCREEN_NAME = sell_to_chotot_search_model
+SCREEN_CLASS
+page_type = sell_to_chotot_search_model",,,,,,,,,
+224,218,Sell to ChoTot,Get Quotation,get_quotation,Added,,,,Recommerce,When user chose mobile model then a price list by grade is showed,,,page_type = sell_to_chotot_get_quotation,"SCREEN_NAME = sell_to_chotot_get_quotation
+SCREEN_CLASS
+page_type = sell_to_chotot_get_quotation",,,,,,,,,
+225,219,Sell to ChoTot,Schedule Pickup,schedule_pickup,Added,,,,Recommerce,When user click to schedule pickup on Get quotation page,,,page_type = sell_to_chotot_schedule_pickup,"SCREEN_NAME = sell_to_chotot_schedule_pickup
+SCREEN_CLASS
+page_type = sell_to_chotot_schedule_pickup",,,,,,,,,
+226,220,Sell to ChoTot,Receiving Account,receiving_account,Added,,,,Recommerce,When user accesses to fill/ edit bank account infomation,,,page_type = sell_to_chotot_receiving_account,"SCREEN_NAME = sell_to_chotot_receiving_account
+SCREEN_CLASS
+page_type = sell_to_chotot_receiving_account",,,,,,,,,
+227,221,Sell to ChoTot,Schedule Success,schedule_success,Added,,,,Recommerce,When user re-confirmed infomation registed ,,,page_type = sell_to_chotot_schedule_success,"SCREEN_NAME = sell_to_chotot_schedule_success
+SCREEN_CLASS
+page_type = sell_to_chotot_schedule_success",,,,,,,,,
+228,222,Dashboard,Dashboard - Subscription,private_dashboard_subscription,Reviewed,x,,,Revenue,Private Dashboard -> Tab 'Gói Pro',,,page_type = private_dashboard_subscription,"SCREEN_NAME = private_dashboard_subscription
+SCREEN_CLASS
+page_type = dashboard
+page_category_id = {{category_id}}",,,,,,,,,
+229,223,Subscription,Universal Subscription Landing Page,universal_subscription_landing_page,Reviewed,x,x,x,Revenue,Trang chủ Subscription (click verticals) -> Universal Subscription Landing Page,,,"page_type = universal_subscription_landing_page
+category_id = {{category_id}}
+","SCREEN_NAME = universal_subscription_landing_page
+SCREEN_CLASS
+page_type = subscription
+page_category_id = {{category_id}}.   
+
+----------------------
+[Update Tagging: Subscription Management Emmbed in Seller Center]
+SCREEN_NAME = 'seller_center_universal_subscription_landing_page'",,,,,,,,,
+230,224,Dashboard,Shop Dashboard - Expired,shop_dashboard_expired,Reviewed,x,,,Revenue,Private Dashboard -> Tab 'Hết hạn',,,page_type = shop_dashboard_expired,,,,,,,,,,
+231,225,Job Slot For Sale,Job Slot For Sale,slot_for_sale,Added,x,,,Job,Job Homepage -> Việc làm Hot -> Xem thêm các việc làm,,,"category_id=13000
+page_type=slot_for_sell",,,,,,,,,,
+232,226,Chatroom,Chat setting,chat_setting,Reviewed,x,x,x,Chat,Enter Chatroom list -> click Setting symbol on the right corner,,,page_type=chat_setting,"SCREEN_NAME = chat_setting
+SCREEN_CLASS
+page_type = chatroom",,,,,,,,,
+233,227,Brand-model page,Brand-model Homepage,brand_model_homepage,Reviewed,x,x,x,Vehicle,"Click ""Tìm hiểu ngay"" in VEH homepage to navigate this page/screen",,,"page_type=brand_model_homepage
+category_id=2000","SCREEN_NAME = brand_model_homepage
+SCREEN_CLASS
+page_type = brand_model_page
+page_category_id = {{category_id}}",,,,,,,,,
+234,228,Brand-model page,Brand-model Listing page,brand_model_listing,Reviewed,x,x,x,Vehicle,"Click random one brand under "" Các hãng xe phổ biến "" to navigate this page/screen",,,"page_type=brand_model_listing
+category_id=2000","SCREEN_NAME = brand_model_listing
+SCREEN_CLASS
+page_type = brand_model_page
+page_category_id = {{category_id}}",,,,,,,,,
+235,229,Brand-model page,Brand-model Detail page,brand_model_detail,Reviewed,x,x,x,Vehicle,Click a car model from Brand-model Homepage or Listing page,,,"page_type=brand_model_detail
+category_id=2000","SCREEN_NAME = brand_model_detail
+SCREEN_CLASS
+page_type = brand_model_page
+page_category_id = {{category_id}}",,,,,,,,,
+236,230,Instant Sell AutoX,InstantSell AutoX Landing Page,instantsell_autox_landing_page,Reviewed,x,x,x,AutoX,When user go to landing page,,,page_type = instantsell_autox_landing_page,"SCREEN_NAME = instantsell_autox_landing_page
+SCREEN_CLASS
+page_type = instant_sell_autox",,,,,,,,,
+237,231,Instant Sell AutoX,Instantsell AutoX Search Car Model,instantsell_autox_search_car_model,Reviewed,,x,x,AutoX,"screen name "" Tìm mẫu xe cần bán"", we click search at search bar in autox landing page.",,,page_type = instantsell_autox_search_car_model,"SCREEN_NAME = instantsell_autox_search_car_model
+SCREEN_CLASS
+page_type = instant_sell_autox",,,,,,,,,
+238,232,Instant Sell AutoX,Instantsell AutoX Input Car Info,instantsell_autox_input_car_info,Reviewed,x,x,x,AutoX,"screen name ""điền thông tin xe"", after user select a car model from search car model page",,,page_type = instantsell_autox_input_car_info,"SCREEN_NAME = instantsell_autox_input_car_info
+SCREEN_CLASS
+page_type = instant_sell_autox",,,,,,,,,
+239,233,Instant Sell AutoX,Instantsell AutoX Book Schedule,instantsell_autox_book_schedule,Reviewed,x,x,x,AutoX,"screen name ""thông tin đăng ký"", after user click ""Đặt lịch hẹn"" button screen ""điền thông tin xe"" ",,,page_type = instantsell_autox_book_schedule,"SCREEN_NAME = instantsell_autox_book_schedule
+SCREEN_CLASS
+page_type = instant_sell_autox",,,,,,,,,
+240,234,Instant Sell AutoX,Instantsell AutoX Successful Schedule,instantsell_autox_successful_schedule,Reviewed,x,x,x,AutoX,"screen name ""thu mua xe"", after user click ""send info"" button from screen ""Thông tin đăng kí""",,,page_type = instantsell_autox_successful_schedule,"SCREEN_NAME = instantsell_autox_successful_schedule
+SCREEN_CLASS
+page_type = instant_sell_autox",,,,,,,,,
+241,235,MKT Landing Page,New Recruiter Landing Page,new_recruiter_landing_page,Reviewed,x,x,x,Job,When user access landing page via url: https://www.vieclamtot.com/nha-tuyen-dung/uu-dai-nha-tuyen dung-moi. ,,,"category_id=13000 
+page_type=new_recruiter_landing_page","SCREEN_NAME = new_recruiter_landing_page
+SCREEN_CLASS
+page_type = mkt_landing_page",,,,,,,,,
+242,236,Brand-model page,Brand-model Search Car Model,brand_model_search_car_model,Reviewed,x (chỉ trên Msite),x,x,Vehicle,we search at search bar in vehicle brand model homepage,,,page_type = brand_model_search_car_model,"SCREEN_NAME = brand_model_search_car_model
+SCREEN_CLASS
+page_type = brand_model_page
+page_category_id = {{category_id}}",,,,,,,,,
+243,237,Payment,Checkout Subscription,checkout_subscription,Reviewed,x,x,x,Customer,When user clicks to buy subscription to go to checkout page,,,"page_type = payment_subscription
+category_id","SCREEN_NAME = checkout_subscription
+SCREEN_CLASS
+page_type = payment
+page_category_id = {{category_id}}",,,,,,,,,
+244,238,PTY Agent,PTY Agent - Listing,pty_agent_listing,Reviewed,x,x,x,PTY,"Agent listing page of PTY, include all agent available base on buyer's filter",,,"page_type = pty_agent_listing
+category_id = 1000","SCREEN_NAME = pty_agent_listing
+SCREEN_CLASS
+page_type = pty_agent",,,,,,,,,
+245,239,ELT Homepage,ELT Homepage,elt_homepage,Reviewed,x,x,x,ELT,New ELT homepage. ,,,"page_type = elt_homepage
+category_id = 5000","SCREEN_NAME = elt_homepage
+SCREEN_CLASS
+page_type = elt_homepage
+page_category = đồ điện tử
+page_category_id = 5000",,,,,,,,,
+246,240,Listing,Listing 5000 Hot,listing_5000_hot,Reviewed,x,x,x,ELT,"New ad-listing page which showcases all ads with highest viewed within the last 2 days. 
+screen ""Có gì hot hôm nay?""",,,"SCREEN_NAME = listing_5000_hot
+page_type = ad_list
+category_id = 5000
+page_region_id
+page_area_id
+page_ward_id","SCREEN_NAME = listing_5000_hot
+SCREEN_CLASS
+page_type = ad_list
+page_category = đồ điện tử
+page_category_id = 5000
+page_region_id
+page_area_id
+page_ward_id",,,,,,,,,
+247,241,MKT Landing Page,Seller Info Landing Page,veh_seller_info_page,Added,x,x,x,Vehicle,VEH Seller Info page to introduce Chợ Tốt offering to pro-sellers,,,,,,,,,,,,,
+248,242,Sell to ChoTot,InstantSell Mobile Landing Page,instantsell_mobile_landing_page,Reviewed,x,x,x,Recommerce,"When user accesses to page/screen ""Thu mua điện thoại""",,,page_type=instantsell_mobile_landing_page,"SCREEN_NAME = instantsell_mobile_landing_page
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+249,243,Sell to ChoTot,Instantsell Search Mobile Model,instantsell_search_mobile_model,Reviewed,,x,x,Recommerce,"Screen/Page ""Chọn dòng điện thoại""",,,page_type=instantsell_search_mobile_model,"SCREEN_NAME = instantsell_search_mobile_model
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+250,244,Sell to ChoTot,InstantSell Mobile Quotation Price,instantsell_mobile_quotation_price,Reviewed,x,x,x,Recommerce,"After clicking on any suggestions on mobile model, then move to screen/page ""Báo giá""",,,page_type=instantsell_mobile_quotation_price,"SCREEN_NAME = instantsell_mobile_quotation_price
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+251,245,Sell to ChoTot,Instantsell Input Mobile Info,instantsell_input_mobile_info,Reviewed,x,x,x,Recommerce,"When user click to schedule pickup on Get quotation page to move to screen/page"" Đăng ký thông tin""",,,page_type=instantsell_input_mobile_info,"SCREEN_NAME = instantsell_input_mobile_info
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+252,246,Sell to ChoTot,Instantsell Input Mobile Bank Account,instantsell_input_mobile_bank_account,Reviewed,x,x,x,Recommerce,"User move to screen/page ""Thông tin nhận thanh toán"" from screen/page"" Đăng ký thông tin""",,,page_type=instantsell_input_mobile_bank_account,"SCREEN_NAME = instantsell_input_mobile_bank_account
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+253,247,Sell to ChoTot,Instantsell Mobile Successful Registration,instantsell_mobile_successful_registration,Reviewed,x,x,x,Recommerce,"Screen/Page ""Thu mua điện thoại"" has a sentence "" Đăng ký thành công""",,,page_type=instantsell_mobile_successful_registration,"SCREEN_NAME = instantsell_mobile_successful_registration
+SCREEN_CLASS
+page_type = sell_to_chotot",,,,,,,,,
+254,248,PTY Agent,PTY Agent - Agent Creatation,pty_agent_creatation,Added,x,x,x,PTY,"Screen tạo ""Chuyên trang Bất động sản""",,,page_type=pty_agent_creation,,,,,,,,,,
+255,249,Recruiter Homepage,Recruiter Homepage,recruiter_homepage,Added,x,x,x,Job,New homepage of recruiter,,,"page_type =  recruiter_homepage
+category_id= 13000
+region_id = {region_id}
+region_name = {region_name}",,,,,,,,,,
+256,250,PTY Agent,PTY Agent - Agent Creatation - Company Selection,pty_agent_creatation_company_selection,Added,,x,,PTY,"Screen input thông tin ""Công ty môi giới"" trong flow ""Tạo Chuyên trang Bất động sản""",,,page_type=pty_agent_creation_company_selection,,,,,,,,,,
+257,251,PTY Agent,PTY Agent - Agent Creatation - License Provider Selection,pty_agent_creatation_license_provider_selection,Added,,x,,PTY,"Screen input thông tin ""Nơi cấp chứng chỉ"" trong flow ""Tạo Chuyên trang Bất động sản""",,,page_type=pty_agent_creation_license_provider_selection,,,,,,,,,,
+258,252,PTY Agent,PTY Agent - Agent Creatation - Add-on service Selection,pty_agent_creatation_add_on_service_selection,Added,,x,,PTY,"Screen input thông tin ""Dịch vụ bổ trợ"" trong flow ""Tạo Chuyên trang Bất động sản""",,,,,,,,,,,,,
+259,253,Dashboard,Shop Dashboard - Subscription,shop_dashboard_subscription,Reviewed,x,,,Revenue,Shop Dashboard -> Tab 'Gói Pro',,,page_type = shop_dashboard_subscription,,,,,,,,,,
+260,254,Shop,Shop Creation - Service and Policy,shop_creation_service_policy,Reviewed,x,x,x,GV,"Screen to input thông tin ""Dịch vụ & chính sách"" in flow ""Tạo cửa hàng""",,,"page_type=shop_creation_policy_service
+category_id = 2000 {category_id}","SCREEN_NAME = shop_creation_policy_service
+SCREEN_CLASS
+page_type = shop
+page_category_id = {category_id}",,,,,,,,,
+261,255, Shop,Shop - Post Detail,shop_post_detail,Reviewed,x,x,x,GV,Screen for visitor / seller to view full post detail,,,"page_type=shop_post_detail
+category = 2000 {category_id}","SCREEN_NAME = shop_post_detail
+SCREEN_CLASS
+page_type = shop
+page_category_id = {category_id}",,,,,,,,,
+262,256,PTY Agent,PTY Agent - Agent Creatation - Introduction,pty_agent_creatation_intro,Added,x,x,x,PTY,Introduction screen for PTY Agent Creatation,,,page_type=pty_agent_creatation_intro,,,,,,,,,,
+263,257,MKT Landing Page,VEH Dynamic Price Landing Page,veh_dynamic_price_landing_page,Added,x,,,VEH,MKT Landing Page for VEH project Dynamic bump price,,,page_type=veh_dynamic_price_landing_page,,,,,,,,,,
+264,258,Listing,Similar Ads Listing,similar_ad_list,Reviewed,x,x,x,Buyer,"Ad list shows when user click ""Xem tất cả"" from Similar Ad section in Adview. ",,,"SCREEN_NAME = similar_ad_list
+page_type = similar_ad_list
+category_id = {category_id}
+","SCREEN_NAME = similar_ad_list
+SCREEN_CLASS
+page_type = ad_list
+page_category = {category_name}
+page_category_id = {category_id}
+",,,,,,,,,
+265,259,GDS Landing page,GDS ELT Subscription Landing page,GDS ELT Subscription Landing page,,x,x,x,GDS,Page giới thiệu gói PRO đồ điện tử và cũng là POS chính của subscription,,,"SCREEN_NAME = gds_subscription_landing_page
+page_type = gds_subscription_landing_page
+category_id = 5000
+","SCREEN_NAME = gds_subscription_landing_page
+page_type = subscription
+page_category_id  = 5000
+",,,,,,,,,
+266,260,POS,POS Listing Fee,pos_listing_fee,Reviewed,x,x,x,"PTY, VEH, GDS","Page/Screen ""Phí đăng tin"" 
+
+(including no-fee ads and fee-ad)
+
+1. Click ""Đăng tin"" at: Page ad insertion: 
+- After inserting ad(free ad, ad sub deducted, paid ad, insert to shop).
+- After Edit (AA and rejected ad) at ad dashboard & shop ad dashboard.
+
+2. Click ""Đăng lên Chợ Tốt"" (""shop_to_chotot"")  for ""Tin chuyên trang"" at Shop Ad Dashboard, [Update] Adview
+
+3. Click ""Đăng lại"" at tab ""Tin hết hạn"" (renew) at tab ""Đang hiển thị"" at User ad dashboard ""Quản lý tin""/ Shop ad dashboard).
+","PTY POS Verticalized: https://701search.atlassian.net/wiki/spaces/PROD/pages/2913992777/PTY+POS+Revamp+Verticalized+-+Product+Overview
+
+VEH, GDS: Verticaled (POS Listing fee): https://701search.atlassian.net/wiki/spaces/PROD/pages/3128328548/VEH+GDS+POS+Verticalized. ",,"
+page_type = pos_listing_fee
+SCREEN_NAME = pos_listing_fee
+ad_id = {ad_id} 
+account_id = {account_id}
+category_id = {category_id} based on ad information (e.g 5010 -> 5000)
+event_source = {event_source}
+seller_type = {seller_type}
+
+1/ {event_source} includes: 
+   +) insert: đăng tin mới: từ màn hình ad insertion, bấm ""Đăng tin"" 
+   +) edit: sửa tin bị từ chối, tin đang hiển thị: từ Quản lý tin, Bấm ""Sửa tin"" --> ad insertion --> bấm ""Đăng tin"" 
+   +) renew: ""Đăng lại"" ở tab Hết hạn trong Quản lý tin.
+
+2/ {ad_source} includes: 
+
+- free_ad: (insert) ad lúc đăng tin mới là tin free 
+- subscription: (insert) ad lúc đăng tin mới là tin từ subscription 
+- unpaid: (insert) ad lúc đăng tin mới là tin cần trả phí đăng tin (all seller_type) và lúc đăng tin từ Chuyên trang ra Chợ Tốt ""shop_to_chotot"" (update: bao gồm từ shop dashboard và adview)
+- accepted: edit live ad
+- free_ad | rejected: (edit) tin bị từ chối (tin này lúc insert là tin free) 
+- subscription | rejected: (edit) tin bị từ chối (tin này lúc insert là tin từ subscription) 
+- unpaid | rejected: (edit) ad bị từ chối và cần trả phí đăng tin.
+- shop_ad: đăng vào shop_listing
+- Không trả ad_source khi renew - Đăng lại.
+
+
+DETAIL","
+SCREEN_NAME  = pos_listing_fee
+SCREEN_CLASS
+page_type = pos
+item_id = {ad_id}
+page_category_id  = {category_id}
+item_ad_source = {ad_source}
+item_event_source = {event_source}
+item_seller_type = {seller_type}",,,,,,,,,
+267,261,POS,POS Premium Feature,pos_premium_feature,Reviewed,x,x,x,PTY,"Page/Screen ""Bán nhanh hơn - Tính năng"" 
+
+1. Click ""Bán nhanh hơn"" at tab ""đang hiển thị"" at User Ad Dashboard ""Quản lý tin""/ Shop ad dashboard).
+2. Click ""Thanh vị trí trang"" at tab ""đang hiển thị"" at User Ad dashboard ""Quản lý tin""/ Shop ad dashboard).
+3. Click ""Đẩy tin"" at Ad stat at tab ""đang hiển thị"" at User Ad dashboard ""Quản lý tin""/ Shop ad dashboard).
+4. Click CTA ""Bán nhanh hơn"" tại POS - LF (luồng không cần thanh toán listing fee).
+5. Click ""Bán nhanh hơn"" tại adview (seller view).","PTY POS Verticalized: https://701search.atlassian.net/wiki/spaces/PROD/pages/2913992777/PTY+POS+Revamp+Verticalized+-+Product+Overview
+
+VEH, GDS: Verticaled (POS Listing fee): https://701search.atlassian.net/wiki/spaces/PROD/pages/3128328548/VEH+GDS+POS+Verticalized. ",,"
+page_type = pos_premium_feature
+SCREEN_NAME = pos_premium_feature
+ad_id = {ad_id} 
+account_id = {account_id}
+seller_type = {seller_type}
+category_id = {category_id} based on ad information (e.g 5010 -> 5000)
+event_source = {event_source}
+ad_source = {ad_source}
+
+1/ {event_source} includes:
+   
+   +) adstat: Quản lý tin Tab Đang hiển thị - Xem thống kê - ""Đẩy tin"".
+   +) sell_faster_dashboard: ""Bán nhanh hơn"" ở Quản lý tin.
+   +) sell_faster_adview: ""Bán nhanh hơn"" ở adview.
+   +) bump_dashboard: ""Đẩy tin"" ở Quản lý tin
+   +) pos_listing_fee: áp dụng với các luồng non_pos: ""Đăng tin""/ ""Sửa tin""  -->  ad insertion -->  bấm ""Đăng tin"" --> ""Bán nhanh hơn""
+   +) upsell_pos_listing_fee: áp dụng với các luồng non_pos: click ""Đăng tin""/ ""Sửa tin""  --> Trang ad insertion -->  bấm ""Đăng tin"" --> click các service ""Đẩy tin/ Tin ưu tiên/ Tin nổi bật"" as entry point để mở POS PF.
+ 
+
+
+
+2/ {ad_source} includes: 
+- accepted: tin đang hiển thị ở Quản lý tin
+- còn lại: [pos_status]: trả về pos_status theo server
+
+
+
+DETAIL","
+SCREEN_NAME  = pos_premium_feature
+SCREEN_CLASS
+page_type = pos
+item_id = {ad_id}
+page_category_id  = {category_id}
+item_ad_source = {ad_source}
+item_event_source = {event_source}
+item_seller_type = {seller_type}",,,,,,,,,
+268,262,POS,POS Verification,pos_verification,Reviewed,,x,x,PTY,"Page/Screen ""Xác nhận đơn hàng"" - entry point: 
+
+Click Button ""Thanh toán"" tại PTY POS Listing Fee và PTY POS Premium Feature 
+ (Android + iOS)
+
+","PTY POS Verticalized: https://701search.atlassian.net/wiki/spaces/PROD/pages/2913992777/PTY+POS+Revamp+Verticalized+-+Product+Overview
+
+VEH, GDS: Verticaled (POS Listing fee): https://701search.atlassian.net/wiki/spaces/PROD/pages/3128328548/VEH+GDS+POS+Verticalized. ",,"
+page_type = pos_verification
+SCREEN_NAME = pos_verification
+ad_id = {ad_id} 
+account_id = {account_id}
+category_id = {category_id}
+event_source = {event_source}
+seller_type = {seller_type}
+
+2/ {event_source} includes:
+- pos_listing_fee
+- pos_premium_feature","SCREEN_NAME = pos_verification
+SCREEN_CLASS
+page_type = pos
+item_id = {ad_id}
+page_category_id  = {category_id}
+item_seller_type = {seller_type}
+item_ad_source = {ad_source}
+item_event_source = {event_source}
+",,,,,,,,,
+269,263, Shop,Shop - Feed,shop_feed,Reviewed,x,x,x,VEH,Screen for buyer to browse all posts created by shop sellers,https://701search.atlassian.net/wiki/spaces/PROD/pages/2890728611/PRD+VEH+Shop+requirements,,"page_type=shop_feed
+category_id = {category_id}","SCREEN_NAME = shop_feed
+SCREEN_CLASS
+page_type = shop
+page_category_id = {{category_id}}",,,,,,,,,
+270,264,Payment,Checkout Cart,checkout_cart,Added,x,x,x,,This is the checkout page when users purchase premium services.,,,"ad_id = {{ad_id}} nếu chỉ có một ad.
+
+multiple_ads = {{ad_id1}},{{ad_id2}},...,{{ad_id9}} nếu có trên một ad. Truyền tối đa 9 ad_id, sắp xếp từ trước tới sau theo giá trị id từ nhỏ tới lớn, format: cách nhau bởi dấu phẩy (không cách). VD: 3,5,10,15
+
+category_id = {{category_id}} nếu chỉ có một category_id. Note: big category, not sub category (VD: 1000, 2000, 5000, v.v.)
+
+multiple_categories = {{category_id1}},{{category_id2}},...,{{category_idn}} nếu có nhiều category_id. Category_id sắp xếp từ trước tới sau theo thứ tự giá trị id từ nhỏ tới lớn, format: cách nhau bởi dấu phẩy (không cách). VD: 1000,2000,5000,13000
+
+page_type = payment
+
+event_source includes:
++) pos : Từ màn hình POS → Click Thanh Toán
++) private_dashboard : Từ màn hình Private Dashboard → Click Thanh Toán cho giỏ hàng chưa thanh toán
++) shop_dashboard : Từ màn hình Shop Dashboard → Click Thanh Toán cho giỏ hàng chưa thanh toán
++) pos_verification: Từ màn hình POS (PTY) --> Click Thanh Toán
++) job_pos: Từ màn hình POS (JOB) --> Click Thanh Toán
+
+total_value = {{total_cart_value}} (tổng tiền mà user sẽ thanh toán cho CT, ví dụ: 1700000)
+
+Ngoài ra, trên App bổ sung:
+firebase_screen = checkout_cart
+firebase_screen_class
+
+Bổ sung parameter support project Virtual Account - Increase Adoption: 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order","Bổ sung trên App:
+
+item_id = tương tự ad_id
+
+item_multiple_ids = tương tự multiple_ads
+
+page_category_id = tương tự category_id
+
+page_multiple_categories = tương tự multiple_categories
+
+item_event_source 
+
+total_value
+
+Bổ sung parameter support project Virtual Account - Increase Adoption 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order",,,,,,,,,
+271,265,Payment,Checkout Cart,checkout_subscription,Added,x,x,x,,This is the checkout page when users purchase subscriptions.,,,"page_type = payment_subscription
+category_id
+sub_category_id (if we can't define subcate we won't have this param)
+
+Bổ sung parameter support project Virtual Account - Increase Adoption 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order","SCREEN_NAME = checkout_subscription
+SCREEN_CLASS
+page_type = payment
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}} (if we can't define subcate we won't have this param)
+
+Bổ sung parameter support project Virtual Account - Increase Adoption 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order",,,,,,,,,
+272,266,Payment,Checkout Cart,checkout_shop,Added,x,x,x,,This is the checkout page when users create/extend a shop.,,,"page_type = payment_shop
+category_id = {{category_id}}
+sub_category_id (if we can't define subcate we won't have this param)
+
+Bổ sung parameter support project Virtual Account - Increase Adoption 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order","SCREEN_NAME = checkout_shop
+SCREEN_CLASS
+page_type = payment
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}} (if we can't define subcate we won't have this param)
+
+Bổ sung parameter support project Virtual Account - Increase Adoption 
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order",,,,,,,,,
+273,267,Payment,Checkout Topup,checkout_topup,Added,x,,,,This is the checkout page when users top up Dong Tot.,,,page_type = payment_topup,đã có ,,,,,,,,,
+274,268,Dong Tot,DT Topup Result,dt_topup_result,Reviewed,,x,,Revenue,"This is result page when users top up Dong Tot successful or failed
+Platform: Android",,,page_type = dt_topup_result,"SCREEN_NAME = dt_topup_result
+SCREEN_CLASS
+page_type = dong_tot
+",,,,,,,,,
+275,269,User Ad Dashboard,User Ad Dashboard,user_ad_dashboard,Reviewed,x,x,x,MKF,"Page ""Quản lý tin"" 
+
+[Mother level]
+On Web: Khi user load page user_ad_dashboard.
+On APP:  
+ + click lại ""Quản lý tin"" và thấy tab mặc định là ""Đang hiển thị""
+ 
+DEMO",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard'
+
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name}","
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+276,270,User Ad Dashboard,User Ad Dashboard - Listing,user_ad_dashboard_listing,Reviewed,x,x,x,MKF,"[Child Level]
+Page ""Quản lý tin đăng"" - Tab ""Đang hiển thị""
+On Web: Khi user load page ""https://www.chotot.com/dashboard/ads/published""
+
+On App:  
+ + Khi user click tab "" Đang hiển thị""
+ + Load tab ""Đang hiển thị"" do deep link
+
+DEMO",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard'
+
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name}","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+277,271,User Ad Dashboard,User Ad Dashboard - Expired,user_ad_dashboard_expired,Reviewed,x,x,x,MKF,"[Child Level]
+On Web:  When load page ""https://www.chotot.com/my-ads/expired""
+
+On App:
+ + User click Tab
+ + Quản lý tin -> click ""Hết hạn"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Hết hạn"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,ư,"SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+278,272,User Ad Dashboard,User Ad Dashboard - Refused,user_ad_dashboard_refused,Reviewed,x,x,x,MKF,"[Child Level]
+
+On Web:  When load page ""https://www.chotot.com/my-ads/refused""
+
+On App:
+ + User click Tab
+ + Quản lý tin -> click ""Bị từ chối"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Bị từ chối"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard_refused'
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name} -->  SCREEN_CLASS ='user_ad_dashboard_refused'","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+279,273,User Ad Dashboard,User Ad Dashboard - Unpaid,user_ad_dashboard_unpaid,Reviewed,x,x,x,MKF,"[Child Level]
+On Web:  When load page ""https://www.chotot.com/my-ads/unpaid""
+
+On App:
+ + User click Tab
+ + Quản lý tin -> click ""Cần thanh toán"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Cần thanh toán"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard_unpaid'
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name} -->  SCREEN_CLASS ='user_ad_dashboard_unpaid'","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+280,274,User Ad Dashboard,User Ad Dashboard - Draft,user_ad_dashboard_draft,Reviewed,x,x,x,MKF,"[Child Level]
+On Web:  When load page ""https://www.chotot.com/my-ads/draft""
+
+On App:
+ + User click Tab
+ + Quản lý tin -> click ""Tin nháp"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Tin nháp"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard_draft'
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name} -->  SCREEN_CLASS = 'user_ad_dashboard_draft'","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+281,275,User Ad Dashboard,User Ad Dashboard - Hidden,user_ad_dashboard_hidden,Reviewed,x,x,x,MKF,"[Child Level]
+On Web:  When load page ""https://www.chotot.com/my-ads/hidden""
+
+On App:
+ + User click Tab
+ + Quản lý tin -> click ""Đã ẩn"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Đã ẩn"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard_hidden'
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name} -->  SCREEN_CLASS ='user_ad_dashboard_hidden'","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+282,276,User Ad Dashboard,User Ad Dashboard - In Review,user_ad_dashboard_inreview,Reviewed,x,x,x,MKF,"[Child Level]
+On Web:  When load page ""https://www.chotot.com/my-ads/in-review""
+
+On App:
+ + User click Tab 
+ + Quản lý tin -> click ""Chờ duỵệt"" -> rời khỏi Quản lý tin -> quay lại Quản lý tin
+ + Load tab ""Chờ duyệt"" do deep link, notification",https://701search.atlassian.net/l/cp/2pfvwp35,,"page_type = 'user_ad_dashboard_inreview'
+SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS = {tab_name} -->  SCREEN_CLASS ='user_ad_dashboard_inreview'","SCREEN_NAME = 'user_ad_dashboard'
+SCREEN_CLASS 
+page_type = 'user_ad_dashboard'
+",,,,,,,,,
+283,277,PTY Agent,PTY Agent Profile - Adlisting,pty_agent_profile_ad_listing,Reviewed,x,x,,PTY,https://701search.atlassian.net/wiki/spaces/PROD/pages/2855600276/PTY+Agent+Profile+-+Product+Requirement,,,"page_type = pty_agent_profile_ad_listing
+category_id = 1000",,,,,,,,,,
+284,278,gds_seller_center,gds_seller_center_home,gds_seller_center_home,Reviewed,x,x,x,GDS,Screen Page Trang chủ,https://701search.atlassian.net/wiki/spaces/GEN/pages/2931916922/Seller+Centre+project+-+Revamp+for+mass+user,,page_type = 'gds_seller_center_home',page_type = 'gds_seller_center_home',,,,,,,,,
+285,279,Chatroom,Chat Suggested By Subject,chat_suggested_by_subject,Added,x,x,x,Chat,"screen/page ""Theo tiêu đề""
+When an user  comes from chatroom list -> search -> click ""Xem thêm kết quả"" under ""Theo tiêu đề""",,,"page_type = 'chat_suggested_by_subject_section'
+SCREEN_NAME = 'chat_suggested_by_subject_section'
+SCREEN_CLASS ","SCREEN_NAME = 'chat_suggested_by_subject_section'
+SCREEN_CLASS 
+page_type = 'chatroom'",,,,,,,,,
+286,280,Chatroom,Chat Suggested By Messages,chat_suggested_by_messages,Added,x,x,x,Chat,"screen/page ""Theo tin nhắn""
+When an user  comes from chatroom list -> search -> click ""Xem thêm kết quả"" under ""Theo  tin nhắn""",,,"page_type = 'chat_suggested_by_messages_section'
+SCREEN_NAME = 'chat_suggested_by_messages_section'
+SCREEN_CLASS ","SCREEN_NAME = 'chat_suggested_by_messages_section'
+SCREEN_CLASS 
+page_type = 'chatroom'
+",,,,,,,,,
+287,281,Chatroom,Chat Suggested By Seller,chat_suggested_by_seller,Added,x,x,x,Chat,"screen/page ""Theo người dùng""
+When an user  comes from chatroom list -> search -> click ""Xem thêm kết quả"" under ""Theo người dùng""",,,"page_type = 'chat_suggested_by_seller_section'
+SCREEN_NAME = 'chat_suggested_by_seller_section'
+SCREEN_CLASS =","SCREEN_NAME = 'chat_suggested_by_seller_section'
+SCREEN_CLASS 
+page_type = 'chatroom'
+",,,,,,,,,
+288,282,Subscription,Subscription Management,subscription_management,Reviewed,x,x,x,Revenue,"Screen/page ""Subscription management"" là trang user có thể sử dụng benefit của gói PRO sau khi đã thanh toán",https://701search.atlassian.net/wiki/spaces/PROD/pages/2951610519/SUBSCRIPTION+MANAGEMENT+PAGE,,"page_type = subscription_management
+
+event_source includes:
++) shortcut_user_ad_dashboard nếu user tới từ User Ad Dashboard","SCREEN_NAME = subscription_management
+
+page_type = subscription
+
+item_event_source
+
+
+----------------------
+[Update Tagging: Subscription Management Emmbed in Seller Center]
+SCREEN_NAME = 'sc_subscription_management'
+",,,,,,,,,
+289,283,Dashboard,Shop Dashboard - Subscription,shop_dashboard_subscription,Reviewed,x,,,Revenue,Shop Dashboard -> Tab 'Gói Pro',,,page_type = shop_dashboard_subscription,"SCREEN_NAME = shop_dashboard_subscription
+SCREEN_CLASS
+page_type = dashboard",,,,,,,,,
+290,284,Seller Center,Seller Center Home,seller_center_home,Reviewed,x,x,x,"PTY
+GDS",Screen Page Trang chủ,"PTY SELLER CENTER
+GDS SC homepage: LINK",,"SCREEN_NAME =  ""seller_center_home""
+SCREEN_CLASS
+category_id
+page_type = ""seller_center""
+
+","SCREEN_NAME =  ""seller_center_home""
+SCREEN_CLASS
+
+page_category_id
+page_type = ""seller_center""
+
+
+page_category_id = {{category_id}}.   ",,,,,,,,,
+291,285,Adview,Bank Loan Pre-check form,bank_loan_precheck_form,Added,x,x,x,VEH,Trang nhập thông tin kiểm tra điều kiện vay ngân hàng (từ VEH Adview),https://701search.atlassian.net/wiki/spaces/PROD/pages/2913731759/PRD+VEH+-+Bank+loan+insurance+services+on+CTX,,,,,,,,,,,,
+292,286,Adview,Bank Loan Pre-check result,bank_loan_precheck_result,Added,x,x,x,VEH,Trang thông báo kết quả khả năng vay ngân hàng (từ VEH Adview / Notification),https://701search.atlassian.net/wiki/spaces/PROD/pages/2913731759/PRD+VEH+-+Bank+loan+insurance+services+on+CTX,,,,,,,,,,,,
+293,287,Dong Tot,Virtual Account,virtual_account,Reviewed,x,,,Revenue,Trang chi tiết của Nạp Đồng Tốt qua Virtual Account,https://701search.atlassian.net/wiki/spaces/PROD/pages/2948956251/Top-up+ng+T+t+with+Virtual+Account#Virtual-Account-page,,page_type = virtual_account,,,,,,,,,,
+294,288,Seller Center,Seller Center Subscription Management,Seller Center Subscription Management,Reviewed,x,,,"PTY
+GDS","[Mother level] Seller Center
+[Child Level] tab Subscription Management (Quản lý gói PRO) được embed trong Seller Center] 
+
+Khi mở Subscription Mangement nằm trong Seller Center
+
+==> page_type = 'seller_center_subscription_management'
+[PRD] [DEMO]","PTY SELLER CENTER
+GDS SC homepage: LINK",,"page_type = ""seller_center_subscription_management""
+SCREEN_NAME =  ""seller_center_subscription_management""
+ 
+
+","SCREEN_NAME = ""seller_center_subscription_management""
+ 
+
+page_type = ""seller_center""
+",,,,,,,,,
+295,289,Seller Center,Seller Center Universal Subscription Landing Page,Seller Center Subscription Landing Page,Reviewed,x,,,"PTY
+GDS","[Mother level] Seller Center
+[Child Level] tab Subscription Landing Page (Giới thiệu Gói PRO) được embed trong Seller Center Khi mở Subscription Landing Page nằm trong Seller Center
+
+- page_type = 'seller_center_universal_subscription_landing_page'
+- category_id = {{category_id}} 
+
+[PRD] [DEMO]","PTY SELLER CENTER
+GDS SC homepage: LINK",,"page_type = ""seller_center_universal_subscription_landing_page""
+SCREEN_NAME =  ""seller_center_universal_subscription_landing_page""
+ 
+category_id","SCREEN_NAME = ""seller_center_universal_subscription_landing_page""
+ 
+page_category_id = {{category_id}}
+page_type = ""seller_center""
+",,,,,,,,,
+296,290,Seller Center,Seller Center Ad dashboard,Seller Center Ad dashboard,Added,x,x,x,"PTY
+GDS","[Mother level] Seller Center
+[Child Level - được embed trong Seller Center] tab Ad Performance (Báo cáo hiệu suất tin đăng)","PTY SELLER CENTER
+GDS SC homepage: LINK",,"page_type = ""seller_center_ad_performance""
+SCREEN_NAME =  ""seller_center_ad_performance""
+
+category_id
+","SCREEN_NAME = ""seller_center_ad_performance""
+ 
+category_id
+page_type = ""seller_center""
+",,,,,,,,,
+297,291,Shop,Shop Setting,Shop Setting,Reviewed,x,x,x,GV,,Shop setting,,"page_type = ""shop_setting""
+SCREEN_NAME =  ""shop_setting""
+category_id = {category_id}","SCREEN_NAME = shop_setting
+SCREEN_CLASS
+page_type = shop
+page_category_id = {category_id}",,,,,,,,,
+298,292,Dong Tot,DT Topup,dt_topup ,Reviewed,x,x,x,Revenue,Trang Nạp Đồng Tốt,https://701search.atlassian.net/wiki/spaces/PROD/pages/3083305009/Dong+Tot+Balance+Revamp,,"page_type = ""dt_topup""
+SCREEN_NAME = ""dt_topup""","page_type = ""dong_tot""
+SCREEN_NAME = ""dt_topup""",,,,,,,,,
+299,293,Gamification,Campaign Tet 2024,campaign_tet_2024,Reviewed,x,,,Revenue,"Trang Campaign Tết 2024
+
+DEMO",https://701search.atlassian.net/wiki/spaces/PROD/pages/3125116994/After+Tet+campaign+2024,,"page_type = ""campaign_tet_2024""
+SCREEN_NAME = ""campaign_tet_2024""","page_type = ""gamification""
+SCREEN_NAME = ""campaign_tet_2024""",,,,,,,,,
+300,294,InstantSell MC,InstantSell MC Landing Page,instantsell_MC_landing_page,Added,x,x,x,VEH,Landing page cho chương trình thu mua xe máy cũ,https://701search.atlassian.net/wiki/spaces/PROD/pages/3162275908/PRD+Trade-in+website+Thu+mua+xe+m+y+c,,"page_type = ""instantsell_MC""
+SCREEN_NAME = ""instantsell_MC""","page_type = ""instantsell_MC""
+SCREEN_NAME = ""instantsell_MC""",,,,,,,,,
+301,295,Payment,Bank Transfer Virtual Account,bank_transfer_virtual_account,Reviewed,x,,,Revenue,"Trang thanh toán Bank Transfer via Virtual Account
+
+DEMO",https://701search.atlassian.net/wiki/spaces/PROD/pages/3209560144/Replace+Payoo+Bank+Transfer+with+Virtual+Account?atlOrigin=eyJpIjoiMDU3NWRkMDYtMWIyNS1mMzE1LWYxMTEtNDliODI4Y2FmYWM0IiwicCI6ImMifQ,,"page_type = ""bank_transfer_virtual_account""",,,,,,,,,,
+302,296,Webview in app,Webview in app,webview_inapp,Added,,x,x,USER,,,,,,,,,,,,,,
+303,297,Payment,Checkout PAAS,checkout_paas,Reviewed,x,x,x,Revenue,Checkout via PAAS,https://701search.atlassian.net/wiki/spaces/PROD/pages/2916581422/Payment+as+a+Service+Part+1,,"page_type = 
++) payment_paas_cart (for PF)
++) payment_paas_subscription (for Subscription)
++) payment_paas_shop (for Shop)
++) payment_paas_topup (for Topup)
++) payment_paas_others (for other kind of services)
+
+event_source includes:
++) payment_result: Từ màn hình Kết quả thanh toán → Click Thanh toán lại
++) order_history: Từ màn hình Lịch sử giao dịch → Click Thanh toán
++) payment_detail: Từ màn hình Chi tiết đơn hàng → Click Thanh toán
++) link: Từ link thanh toán
+
+is_dongtot_sufficient:
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order
+
+If page_type = payment_paas_cart
+- ad_id = {{ad_id}} nếu chỉ có một ad.
+- multiple_ads = {{ad_id1}},{{ad_id2}},...,{{ad_id9}} nếu có trên một ad. Truyền tối đa 9 ad_id, sắp xếp từ trước tới sau theo giá trị id từ nhỏ tới lớn, format: cách nhau bởi dấu phẩy (không cách). VD: 3,5,10,15
+- category_id = {{category_id}} nếu chỉ có một category_id. Note: big category, not sub category (VD: 1000, 2000, 5000, v.v.)
+- multiple_categories = {{category_id1}},{{category_id2}},...,{{category_idn}} nếu có nhiều category_id. Category_id sắp xếp từ trước tới sau theo thứ tự giá trị id từ nhỏ tới lớn, format: cách nhau bởi dấu phẩy (không cách). VD: 1000,2000,5000,13000
+- total_value = {{total_cart_value}} (tổng tiền mà user sẽ thanh toán cho CT, ví dụ: 1700000)
+
+If page_type = payment_paas_shop
+- category_id = {{category_id}}
+- sub_category_id (if we can't define subcate we won't have this param)","SCREEN_NAME = 
++) payment_paas_cart (for PF)
++) payment_paas_subscription (for Subscription)
++) payment_paas_shop (for Shop)
++) payment_paas_topup (for Topup)
++) payment_paas_others (for other kind of services)
+SCREEN_CLASS
+
+page_type = 'payment'
+
+event_source = tương tự event_source
+
+is_dongtot_sufficient
++) true: User’s Dong Tot Balance is sufficient to make payment for the order
++) false: User’s Dong Tot Balance is insufficient to make payment for the order
+
+If page_type = payment_paas_cart
+- ad_id
+- multiple_ads 
+- page_category_id = tương tự category_id
+- multiple_categories 
+- total_value = {{total_cart_value}} (tổng tiền mà user sẽ thanh toán cho CT, ví dụ: 1700000)
+
+If screenName = payment_paas_shop
+- page_category_id = tương tự category_id
+- page_sub_category_id (if we can't define subcate we won't have this param)",,,,,,,,,
+304,298,Payment,Payment Result,payment_result,Reviewed,x,x,x,Revenue,"Page Kết quả giao dịch
+After payment success or fail 
+
+DEMO",https://701search.atlassian.net/wiki/spaces/PROD/pages/3120071452/Repayment,,,"SCREEN_NAME = 
++) 'payment_result_success': payment success
++) 'payment_result_fail’: payment fail
+SCREEN_CLASS 
+
+page_type = 'payment'",,,,,,,,,
+305,299,Payment,Order History,order_history,Reviewed,x,x,x,Revenue,"Page Lịch sử giao dịch
+
+DEMO",https://701search.atlassian.net/wiki/spaces/PROD/pages/3120071452/Repayment,,,"SCREEN_NAME = 
++) ‘order_history’: Tab Đơn hàng
++) ‘order_history_credit’: Tab Đồng Tốt
++) ‘order_history_econtract’: Tab HĐ cung cấp dịch vụ
+SCREEN_CLASS
+
+page_type = 'payment’",,,,,,,,,
+306,300,Payment,Payment Detail,payment_detail,Reviewed,x,x,x,Revenue,"Page Chi tiết giao dịch
+User from Lịch sử giao dịch page/screen, click on an order in Tab Đơn hàng/Đồng Tốt
+
+DEMO ",https://701search.atlassian.net/wiki/spaces/PROD/pages/3120071452/Repayment,,,"SCREEN_NAME = ‘payment_detail’
+SCREEN_CLASS
+
+page_type = ‘payment’
+
+order_status = {status_of_order}
+include:
++) pending_payment: When user creates an order and it is waiting for payment from user
++) payment_cancelled: When user actively canceled payment for order from payment vendor page
++) paid: When user successfully made payment for the order and services in the order are waiting for delivery
++) closed: When services in the order are finished delivery
++) canceled: When user actively canceled the order on Cho Tot or the order did not get payment 4 hours since created time with Topup/PF/Shop/Sub or 24 hours since created time with eContracts",,,,,,,,,
+307,301,ecommerce,Ecommerce Shop,ecommerce_shop,Added,x,x,,VEH,,,,"Đặc biệt lưu ý, từ 15/6/2024, page_medata sẽ  chỉ dùng cho web
+page_type = ecommerce","SCREEN_NAME = ‘ecommerce_shop’
+SCREEN_CLASS
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}}
+page_type = ‘ecommerce’",,,,,,,,,
+308,302,ecommerce,Ecommerce Detail,ecommerce_detail,Added,x,x,,VEH,,,,"Đặc biệt lưu ý, từ 15/6/2024, page_medata sẽ  chỉ dùng cho web
+page_type = ecommerce","SCREEN_NAME = ‘ecommerce_detail’
+SCREEN_CLASS
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}}
+page_type = ‘ecommerce’",,,,,,,,,
+309,303,ecommerce,Ecommerce Order Detail,ecommerce_order_detail,Added,x,x,,VEH,,,,"Đặc biệt lưu ý, từ 15/6/2024, page_medata sẽ  chỉ dùng cho web
+page_type = ecommerce","SCREEN_NAME = ‘ecommerce_order_detail’
+SCREEN_CLASS
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}}
+page_type = ‘ecommerce’",,,,,,,,,
+310,304,Order Tracking,Order Tracking,order_tracking,Added,x,x,,VEH,,,,"Đặc biệt lưu ý, từ 15/6/2024, page_medata sẽ  chỉ dùng cho web
+page_type = order_tracking","SCREEN_NAME = ‘order_tracking’
+SCREEN_CLASS
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}}
+page_type = ‘order_tracking’",,,,,,,,,
+311,305,Light Ad,Light Ad - Search Item,light_ad_search_item,Reviewed,x,x,x,,Seller,,,page_type = light_ad_search_item,"SCREEN_NAME = light_ad_search_item
+SCREEN_CLASS
+page_type = light_ad
+",https://701search.atlassian.net/wiki/spaces/PROD/pages/3164340251/TECH+PRD+AD+INSERTION+V2,,,,,,,,
+312,306,ecommerce,Ecommerce Check cart,ecommerce_check_cart,Added,x,x,x,VEH,,,,"Đặc biệt lưu ý, từ 15/6/2024, page_medata sẽ  chỉ dùng cho web
+page_type = ecommerce_check_cart","SCREEN_NAME = ‘ecommerce_order'
+SCREEN_CLASS
+page_category_id = {{category_id}}
+page_sub_category_L1_id = {{sub_category_id}}
+page_type = ‘ecommerce’",,,,,,,,,
+313,307,,,,,,,,,,,,,,,,,,,,,,
+314,308,,,,,,,,,,,,,,,,,,,,,,
+315,309,,,,,,,,,,,,,,,,,,,,,,
+316,310,,,,,,,,,,,,,,,,,,,,,,
+317,311,,,,,,,,,,,,,,,,,,,,,,
+318,312,,,,,,,,,,,,,,,,,,,,,,
+319,313,,,,,,,,,,,,,,,,,,,,,,
+320,314,,,,,,,,,,,,,,,,,,,,,,
+321,315,,,,,,,,,,,,,,,,,,,,,,
+322,316,,,,,,,,,,,,,,,,,,,,,,
+323,317,,,,,,,,,,,,,,,,,,,,,,
+324,318,,,,,,,,,,,,,,,,,,,,,,
+325,319,,,,,,,,,,,,,,,,,,,,,,
+326,320,,,,,,,,,,,,,,,,,,,,,,
+327,321,,,,,,,,,,,,,,,,,,,,,,
+328,322,,,,,,,,,,,,,,,,,,,,,,
+329,323,,,,,,,,,,,,,,,,,,,,,,
+330,324,,,,,,,,,,,,,,,,,,,,,,
+331,325,,,,,,,,,,,,,,,,,,,,,,
+332,326,,,,,,,,,,,,,,,,,,,,,,
+333,327,,,,,,,,,,,,,,,,,,,,,,
+334,328,,,,,,,,,,,,,,,,,,,,,,
+335,329,,,,,,,,,,,,,,,,,,,,,,
+336,330,,,,,,,,,,,,,,,,,,,,,,
+337,331,,,,,,,,,,,,,,,,,,,,,,
+338,332,,,,,,,,,,,,,,,,,,,,,,
+339,333,,,,,,,,,,,,,,,,,,,,,,
+340,334,,,,,,,,,,,,,,,,,,,,,,
+341,335,,,,,,,,,,,,,,,,,,,,,,
+342,336,,,,,,,,,,,,,,,,,,,,,,
+343,337,,,,,,,,,,,,,,,,,,,,,,
+344,338,,,,,,,,,,,,,,,,,,,,,,
+345,339,,,,,,,,,,,,,,,,,,,,,,
+346,340,,,,,,,,,,,,,,,,,,,,,,
+347,341,,,,,,,,,,,,,,,,,,,,,,
+348,342,,,,,,,,,,,,,,,,,,,,,,
+349,343,,,,,,,,,,,,,,,,,,,,,,
+350,344,,,,,,,,,,,,,,,,,,,,,,
+351,345,,,,,,,,,,,,,,,,,,,,,,
+352,346,,,,,,,,,,,,,,,,,,,,,,
+353,347,,,,,,,,,,,,,,,,,,,,,,
+354,348,,,,,,,,,,,,,,,,,,,,,,
+355,349,,,,,,,,,,,,,,,,,,,,,,
+356,350,,,,,,,,,,,,,,,,,,,,,,
+357,351,,,,,,,,,,,,,,,,,,,,,,
+358,352,,,,,,,,,,,,,,,,,,,,,,
+359,353,,,,,,,,,,,,,,,,,,,,,,
+360,354,,,,,,,,,,,,,,,,,,,,,,
+361,355,,,,,,,,,,,,,,,,,,,,,,
+362,356,,,,,,,,,,,,,,,,,,,,,,
+363,357,,,,,,,,,,,,,,,,,,,,,,
+364,358,,,,,,,,,,,,,,,,,,,,,,
+365,359,,,,,,,,,,,,,,,,,,,,,,
+366,360,,,,,,,,,,,,,,,,,,,,,,
+367,361,,,,,,,,,,,,,,,,,,,,,,
+368,362,,,,,,,,,,,,,,,,,,,,,,
+369,363,,,,,,,,,,,,,,,,,,,,,,
+370,364,,,,,,,,,,,,,,,,,,,,,,
+371,365,,,,,,,,,,,,,,,,,,,,,,
+372,366,,,,,,,,,,,,,,,,,,,,,,
+373,367,,,,,,,,,,,,,,,,,,,,,,
+374,368,,,,,,,,,,,,,,,,,,,,,,
+375,369,,,,,,,,,,,,,,,,,,,,,,
+376,370,,,,,,,,,,,,,,,,,,,,,,
+377,371,,,,,,,,,,,,,,,,,,,,,,
+378,372,,,,,,,,,,,,,,,,,,,,,,
+379,373,,,,,,,,,,,,,,,,,,,,,,
+380,374,,,,,,,,,,,,,,,,,,,,,,
+381,375,,,,,,,,,,,,,,,,,,,,,,
+382,376,,,,,,,,,,,,,,,,,,,,,,
+383,377,,,,,,,,,,,,,,,,,,,,,,
+384,378,,,,,,,,,,,,,,,,,,,,,,
+385,379,,,,,,,,,,,,,,,,,,,,,,
+386,380,,,,,,,,,,,,,,,,,,,,,,
+387,381,,,,,,,,,,,,,,,,,,,,,,
+388,382,,,,,,,,,,,,,,,,,,,,,,
+389,383,,,,,,,,,,,,,,,,,,,,,,
+390,384,,,,,,,,,,,,,,,,,,,,,,
+391,385,,,,,,,,,,,,,,,,,,,,,,
+392,386,,,,,,,,,,,,,,,,,,,,,,
+393,387,,,,,,,,,,,,,,,,,,,,,,
+394,388,,,,,,,,,,,,,,,,,,,,,,
+395,389,,,,,,,,,,,,,,,,,,,,,,
+396,390,,,,,,,,,,,,,,,,,,,,,,
+397,391,,,,,,,,,,,,,,,,,,,,,,
+398,392,,,,,,,,,,,,,,,,,,,,,,
+399,393,,,,,,,,,,,,,,,,,,,,,,
+400,394,,,,,,,,,,,,,,,,,,,,,,
+401,395,,,,,,,,,,,,,,,,,,,,,,
+402,396,,,,,,,,,,,,,,,,,,,,,,
+403,397,,,,,,,,,,,,,,,,,,,,,,
+404,398,,,,,,,,,,,,,,,,,,,,,,
+405,399,,,,,,,,,,,,,,,,,,,,,,
+406,400,,,,,,,,,,,,,,,,,,,,,,
+407,401,,,,,,,,,,,,,,,,,,,,,,
+408,402,,,,,,,,,,,,,,,,,,,,,,
+409,403,,,,,,,,,,,,,,,,,,,,,,
+410,404,,,,,,,,,,,,,,,,,,,,,,
+411,405,,,,,,,,,,,,,,,,,,,,,,
+412,406,,,,,,,,,,,,,,,,,,,,,,
+413,407,,,,,,,,,,,,,,,,,,,,,,
+414,408,,,,,,,,,,,,,,,,,,,,,,
+415,409,,,,,,,,,,,,,,,,,,,,,,
+416,410,,,,,,,,,,,,,,,,,,,,,,
+417,411,,,,,,,,,,,,,,,,,,,,,,
+418,412,,,,,,,,,,,,,,,,,,,,,,
+419,413,,,,,,,,,,,,,,,,,,,,,,
+420,414,,,,,,,,,,,,,,,,,,,,,,
+421,415,,,,,,,,,,,,,,,,,,,,,,
+422,416,,,,,,,,,,,,,,,,,,,,,,
+423,417,,,,,,,,,,,,,,,,,,,,,,
+424,418,,,,,,,,,,,,,,,,,,,,,,
+425,419,,,,,,,,,,,,,,,,,,,,,,
+426,420,,,,,,,,,,,,,,,,,,,,,,
+427,421,,,,,,,,,,,,,,,,,,,,,,
+428,422,,,,,,,,,,,,,,,,,,,,,,
+429,423,,,,,,,,,,,,,,,,,,,,,,
+430,424,,,,,,,,,,,,,,,,,,,,,,
+431,425,,,,,,,,,,,,,,,,,,,,,,
+432,426,,,,,,,,,,,,,,,,,,,,,,
+433,427,,,,,,,,,,,,,,,,,,,,,,
+434,428,,,,,,,,,,,,,,,,,,,,,,
+435,429,,,,,,,,,,,,,,,,,,,,,,
+436,430,,,,,,,,,,,,,,,,,,,,,,
+437,431,,,,,,,,,,,,,,,,,,,,,,
+438,432,,,,,,,,,,,,,,,,,,,,,,
+439,433,,,,,,,,,,,,,,,,,,,,,,
+440,434,,,,,,,,,,,,,,,,,,,,,,
+441,435,,,,,,,,,,,,,,,,,,,,,,
+442,436,,,,,,,,,,,,,,,,,,,,,,
+443,437,,,,,,,,,,,,,,,,,,,,,,
+444,438,,,,,,,,,,,,,,,,,,,,,,
+445,439,,,,,,,,,,,,,,,,,,,,,,
+446,440,,,,,,,,,,,,,,,,,,,,,,
+447,441,,,,,,,,,,,,,,,,,,,,,,
+448,442,,,,,,,,,,,,,,,,,,,,,,
+449,443,,,,,,,,,,,,,,,,,,,,,,
+450,444,,,,,,,,,,,,,,,,,,,,,,
+451,445,,,,,,,,,,,,,,,,,,,,,,
+452,446,,,,,,,,,,,,,,,,,,,,,,
+453,447,,,,,,,,,,,,,,,,,,,,,,
+454,448,,,,,,,,,,,,,,,,,,,,,,
+455,449,,,,,,,,,,,,,,,,,,,,,,
+456,450,,,,,,,,,,,,,,,,,,,,,,
+457,451,,,,,,,,,,,,,,,,,,,,,,
+458,452,,,,,,,,,,,,,,,,,,,,,,
+459,453,,,,,,,,,,,,,,,,,,,,,,
+460,454,,,,,,,,,,,,,,,,,,,,,,
+461,455,,,,,,,,,,,,,,,,,,,,,,
+462,456,,,,,,,,,,,,,,,,,,,,,,
+463,457,,,,,,,,,,,,,,,,,,,,,,
+464,458,,,,,,,,,,,,,,,,,,,,,,
+465,459,,,,,,,,,,,,,,,,,,,,,,
+466,460,,,,,,,,,,,,,,,,,,,,,,
+467,461,,,,,,,,,,,,,,,,,,,,,,
+468,462,,,,,,,,,,,,,,,,,,,,,,
+469,463,,,,,,,,,,,,,,,,,,,,,,
+470,464,,,,,,,,,,,,,,,,,,,,,,
+471,465,,,,,,,,,,,,,,,,,,,,,,
+472,466,,,,,,,,,,,,,,,,,,,,,,
+473,467,,,,,,,,,,,,,,,,,,,,,,
+474,468,,,,,,,,,,,,,,,,,,,,,,
+475,469,,,,,,,,,,,,,,,,,,,,,,
+476,470,,,,,,,,,,,,,,,,,,,,,,
+477,471,,,,,,,,,,,,,,,,,,,,,,
+478,472,,,,,,,,,,,,,,,,,,,,,,
+479,473,,,,,,,,,,,,,,,,,,,,,,
+480,474,,,,,,,,,,,,,,,,,,,,,,
+481,475,,,,,,,,,,,,,,,,,,,,,,
+482,476,,,,,,,,,,,,,,,,,,,,,,
+483,477,,,,,,,,,,,,,,,,,,,,,,
+484,478,,,,,,,,,,,,,,,,,,,,,,
+485,479,,,,,,,,,,,,,,,,,,,,,,
+486,480,,,,,,,,,,,,,,,,,,,,,,
+487,481,,,,,,,,,,,,,,,,,,,,,,
+488,482,,,,,,,,,,,,,,,,,,,,,,
+489,483,,,,,,,,,,,,,,,,,,,,,,
+490,484,,,,,,,,,,,,,,,,,,,,,,
+491,485,,,,,,,,,,,,,,,,,,,,,,
+492,486,,,,,,,,,,,,,,,,,,,,,,
+493,487,,,,,,,,,,,,,,,,,,,,,,
+494,488,,,,,,,,,,,,,,,,,,,,,,
+495,489,,,,,,,,,,,,,,,,,,,,,,
+496,490,,,,,,,,,,,,,,,,,,,,,,
+497,491,,,,,,,,,,,,,,,,,,,,,,
+498,492,,,,,,,,,,,,,,,,,,,,,,
+499,493,,,,,,,,,,,,,,,,,,,,,,
+500,494,,,,,,,,,,,,,,,,,,,,,,
+501,495,,,,,,,,,,,,,,,,,,,,,,
+502,496,,,,,,,,,,,,,,,,,,,,,,
+503,497,,,,,,,,,,,,,,,,,,,,,,
+504,498,,,,,,,,,,,,,,,,,,,,,,
+505,499,,,,,,,,,,,,,,,,,,,,,,
+506,500,,,,,,,,,,,,,,,,,,,,,,
+507,501,,,,,,,,,,,,,,,,,,,,,,
+508,502,,,,,,,,,,,,,,,,,,,,,,
+509,503,,,,,,,,,,,,,,,,,,,,,,
+510,504,,,,,,,,,,,,,,,,,,,,,,
+511,505,,,,,,,,,,,,,,,,,,,,,,
+512,506,,,,,,,,,,,,,,,,,,,,,,
+513,507,,,,,,,,,,,,,,,,,,,,,,
+514,508,,,,,,,,,,,,,,,,,,,,,,
+515,509,,,,,,,,,,,,,,,,,,,,,,
+516,510,,,,,,,,,,,,,,,,,,,,,,
+517,511,,,,,,,,,,,,,,,,,,,,,,
+518,512,,,,,,,,,,,,,,,,,,,,,,
+519,513,,,,,,,,,,,,,,,,,,,,,,
+520,514,,,,,,,,,,,,,,,,,,,,,,
+521,515,,,,,,,,,,,,,,,,,,,,,,
+522,516,,,,,,,,,,,,,,,,,,,,,,
+523,517,,,,,,,,,,,,,,,,,,,,,,
+524,518,,,,,,,,,,,,,,,,,,,,,,
+525,519,,,,,,,,,,,,,,,,,,,,,,
+526,520,,,,,,,,,,,,,,,,,,,,,,
+527,521,,,,,,,,,,,,,,,,,,,,,,
+528,522,,,,,,,,,,,,,,,,,,,,,,
+529,523,,,,,,,,,,,,,,,,,,,,,,
+530,524,,,,,,,,,,,,,,,,,,,,,,
+531,525,,,,,,,,,,,,,,,,,,,,,,
+532,526,,,,,,,,,,,,,,,,,,,,,,
+533,527,,,,,,,,,,,,,,,,,,,,,,
+534,528,,,,,,,,,,,,,,,,,,,,,,
+535,529,,,,,,,,,,,,,,,,,,,,,,
+536,530,,,,,,,,,,,,,,,,,,,,,,
+537,531,,,,,,,,,,,,,,,,,,,,,,
+538,532,,,,,,,,,,,,,,,,,,,,,,
+539,533,,,,,,,,,,,,,,,,,,,,,,
+540,534,,,,,,,,,,,,,,,,,,,,,,
+541,535,,,,,,,,,,,,,,,,,,,,,,
+542,536,,,,,,,,,,,,,,,,,,,,,,
+543,537,,,,,,,,,,,,,,,,,,,,,,
+544,538,,,,,,,,,,,,,,,,,,,,,,
+545,539,,,,,,,,,,,,,,,,,,,,,,
+546,540,,,,,,,,,,,,,,,,,,,,,,
+547,541,,,,,,,,,,,,,,,,,,,,,,
+548,542,,,,,,,,,,,,,,,,,,,,,,
+549,543,,,,,,,,,,,,,,,,,,,,,,
+550,544,,,,,,,,,,,,,,,,,,,,,,
+551,545,,,,,,,,,,,,,,,,,,,,,,
+552,546,,,,,,,,,,,,,,,,,,,,,,
+553,547,,,,,,,,,,,,,,,,,,,,,,
+554,548,,,,,,,,,,,,,,,,,,,,,,
+555,549,,,,,,,,,,,,,,,,,,,,,,
+556,550,,,,,,,,,,,,,,,,,,,,,,
+557,551,,,,,,,,,,,,,,,,,,,,,,
+558,552,,,,,,,,,,,,,,,,,,,,,,
+559,553,,,,,,,,,,,,,,,,,,,,,,
+560,554,,,,,,,,,,,,,,,,,,,,,,
+561,555,,,,,,,,,,,,,,,,,,,,,,
+562,556,,,,,,,,,,,,,,,,,,,,,,
+563,557,,,,,,,,,,,,,,,,,,,,,,
+564,558,,,,,,,,,,,,,,,,,,,,,,
+565,559,,,,,,,,,,,,,,,,,,,,,,
+566,560,,,,,,,,,,,,,,,,,,,,,,
+567,561,,,,,,,,,,,,,,,,,,,,,,
+568,562,,,,,,,,,,,,,,,,,,,,,,
+569,563,,,,,,,,,,,,,,,,,,,,,,
+570,564,,,,,,,,,,,,,,,,,,,,,,
+571,565,,,,,,,,,,,,,,,,,,,,,,
+572,566,,,,,,,,,,,,,,,,,,,,,,
+573,567,,,,,,,,,,,,,,,,,,,,,,
+574,568,,,,,,,,,,,,,,,,,,,,,,
+575,569,,,,,,,,,,,,,,,,,,,,,,
+576,570,,,,,,,,,,,,,,,,,,,,,,
+577,571,,,,,,,,,,,,,,,,,,,,,,
+578,572,,,,,,,,,,,,,,,,,,,,,,
+579,573,,,,,,,,,,,,,,,,,,,,,,
+580,574,,,,,,,,,,,,,,,,,,,,,,
+581,575,,,,,,,,,,,,,,,,,,,,,,
+582,576,,,,,,,,,,,,,,,,,,,,,,
+583,577,,,,,,,,,,,,,,,,,,,,,,
+584,578,,,,,,,,,,,,,,,,,,,,,,
+585,579,,,,,,,,,,,,,,,,,,,,,,
+586,580,,,,,,,,,,,,,,,,,,,,,,
+587,581,,,,,,,,,,,,,,,,,,,,,,
+588,582,,,,,,,,,,,,,,,,,,,,,,
+589,583,,,,,,,,,,,,,,,,,,,,,,
+590,584,,,,,,,,,,,,,,,,,,,,,,
+591,585,,,,,,,,,,,,,,,,,,,,,,
+592,586,,,,,,,,,,,,,,,,,,,,,,
+593,587,,,,,,,,,,,,,,,,,,,,,,
+594,588,,,,,,,,,,,,,,,,,,,,,,
+595,589,,,,,,,,,,,,,,,,,,,,,,
+596,590,,,,,,,,,,,,,,,,,,,,,,
+597,591,,,,,,,,,,,,,,,,,,,,,,
+598,592,,,,,,,,,,,,,,,,,,,,,,
+599,593,,,,,,,,,,,,,,,,,,,,,,
+600,594,,,,,,,,,,,,,,,,,,,,,,
+601,595,,,,,,,,,,,,,,,,,,,,,,
+602,596,,,,,,,,,,,,,,,,,,,,,,
+603,597,,,,,,,,,,,,,,,,,,,,,,
+604,598,,,,,,,,,,,,,,,,,,,,,,
+605,599,,,,,,,,,,,,,,,,,,,,,,
+606,600,,,,,,,,,,,,,,,,,,,,,,
+607,601,,,,,,,,,,,,,,,,,,,,,,
+608,602,,,,,,,,,,,,,,,,,,,,,,
+609,603,,,,,,,,,,,,,,,,,,,,,,
+610,604,,,,,,,,,,,,,,,,,,,,,,
+611,605,,,,,,,,,,,,,,,,,,,,,,
+612,606,,,,,,,,,,,,,,,,,,,,,,
+613,607,,,,,,,,,,,,,,,,,,,,,,
+614,608,,,,,,,,,,,,,,,,,,,,,,
+615,609,,,,,,,,,,,,,,,,,,,,,,
+616,610,,,,,,,,,,,,,,,,,,,,,,
+617,611,,,,,,,,,,,,,,,,,,,,,,
+618,612,,,,,,,,,,,,,,,,,,,,,,
+619,613,,,,,,,,,,,,,,,,,,,,,,
+620,614,,,,,,,,,,,,,,,,,,,,,,
+621,615,,,,,,,,,,,,,,,,,,,,,,
+622,616,,,,,,,,,,,,,,,,,,,,,,
+623,617,,,,,,,,,,,,,,,,,,,,,,
+624,618,,,,,,,,,,,,,,,,,,,,,,
+625,619,,,,,,,,,,,,,,,,,,,,,,
+626,620,,,,,,,,,,,,,,,,,,,,,,
+627,621,,,,,,,,,,,,,,,,,,,,,,
+628,622,,,,,,,,,,,,,,,,,,,,,,
+629,623,,,,,,,,,,,,,,,,,,,,,,
+630,624,,,,,,,,,,,,,,,,,,,,,,
+631,625,,,,,,,,,,,,,,,,,,,,,,
+632,626,,,,,,,,,,,,,,,,,,,,,,
+633,627,,,,,,,,,,,,,,,,,,,,,,
+634,628,,,,,,,,,,,,,,,,,,,,,,
+635,629,,,,,,,,,,,,,,,,,,,,,,
+636,630,,,,,,,,,,,,,,,,,,,,,,
+637,631,,,,,,,,,,,,,,,,,,,,,,
+638,632,,,,,,,,,,,,,,,,,,,,,,
+639,633,,,,,,,,,,,,,,,,,,,,,,
+640,634,,,,,,,,,,,,,,,,,,,,,,
+641,635,,,,,,,,,,,,,,,,,,,,,,
+642,636,,,,,,,,,,,,,,,,,,,,,,
+643,637,,,,,,,,,,,,,,,,,,,,,,
+644,638,,,,,,,,,,,,,,,,,,,,,,
+645,639,,,,,,,,,,,,,,,,,,,,,,
+646,640,,,,,,,,,,,,,,,,,,,,,,
+647,641,,,,,,,,,,,,,,,,,,,,,,
+648,642,,,,,,,,,,,,,,,,,,,,,,
+649,643,,,,,,,,,,,,,,,,,,,,,,
+650,644,,,,,,,,,,,,,,,,,,,,,,
+651,645,,,,,,,,,,,,,,,,,,,,,,
+652,646,,,,,,,,,,,,,,,,,,,,,,
+653,647,,,,,,,,,,,,,,,,,,,,,,
+654,648,,,,,,,,,,,,,,,,,,,,,,
+655,649,,,,,,,,,,,,,,,,,,,,,,
+656,650,,,,,,,,,,,,,,,,,,,,,,
+657,651,,,,,,,,,,,,,,,,,,,,,,
+658,652,,,,,,,,,,,,,,,,,,,,,,
+659,653,,,,,,,,,,,,,,,,,,,,,,
+660,654,,,,,,,,,,,,,,,,,,,,,,
+661,655,,,,,,,,,,,,,,,,,,,,,,
+662,656,,,,,,,,,,,,,,,,,,,,,,
+663,657,,,,,,,,,,,,,,,,,,,,,,
+664,658,,,,,,,,,,,,,,,,,,,,,,
+665,659,,,,,,,,,,,,,,,,,,,,,,
+666,660,,,,,,,,,,,,,,,,,,,,,,
+667,661,,,,,,,,,,,,,,,,,,,,,,
+668,662,,,,,,,,,,,,,,,,,,,,,,
+669,663,,,,,,,,,,,,,,,,,,,,,,
+670,664,,,,,,,,,,,,,,,,,,,,,,
+671,665,,,,,,,,,,,,,,,,,,,,,,
+672,666,,,,,,,,,,,,,,,,,,,,,,
+673,667,,,,,,,,,,,,,,,,,,,,,,
+674,668,,,,,,,,,,,,,,,,,,,,,,
+675,669,,,,,,,,,,,,,,,,,,,,,,
+676,670,,,,,,,,,,,,,,,,,,,,,,
+677,671,,,,,,,,,,,,,,,,,,,,,,
+678,672,,,,,,,,,,,,,,,,,,,,,,
+679,673,,,,,,,,,,,,,,,,,,,,,,
+680,674,,,,,,,,,,,,,,,,,,,,,,
+681,675,,,,,,,,,,,,,,,,,,,,,,
+682,676,,,,,,,,,,,,,,,,,,,,,,
+683,677,,,,,,,,,,,,,,,,,,,,,,
+684,678,,,,,,,,,,,,,,,,,,,,,,
+685,679,,,,,,,,,,,,,,,,,,,,,,
+686,680,,,,,,,,,,,,,,,,,,,,,,
+687,681,,,,,,,,,,,,,,,,,,,,,,
+688,682,,,,,,,,,,,,,,,,,,,,,,
+689,683,,,,,,,,,,,,,,,,,,,,,,
+690,684,,,,,,,,,,,,,,,,,,,,,,
+691,685,,,,,,,,,,,,,,,,,,,,,,
+692,686,,,,,,,,,,,,,,,,,,,,,,
+693,687,,,,,,,,,,,,,,,,,,,,,,
+694,688,,,,,,,,,,,,,,,,,,,,,,
+695,689,,,,,,,,,,,,,,,,,,,,,,
+696,690,,,,,,,,,,,,,,,,,,,,,,
+697,691,,,,,,,,,,,,,,,,,,,,,,
+698,692,,,,,,,,,,,,,,,,,,,,,,
+699,693,,,,,,,,,,,,,,,,,,,,,,
+700,694,,,,,,,,,,,,,,,,,,,,,,
+701,695,,,,,,,,,,,,,,,,,,,,,,
+702,696,,,,,,,,,,,,,,,,,,,,,,
+703,697,,,,,,,,,,,,,,,,,,,,,,
+704,698,,,,,,,,,,,,,,,,,,,,,,
+705,699,,,,,,,,,,,,,,,,,,,,,,
+706,700,,,,,,,,,,,,,,,,,,,,,,
+707,701,,,,,,,,,,,,,,,,,,,,,,
+708,702,,,,,,,,,,,,,,,,,,,,,,
+709,703,,,,,,,,,,,,,,,,,,,,,,
+710,704,,,,,,,,,,,,,,,,,,,,,,
+711,705,,,,,,,,,,,,,,,,,,,,,,
+712,706,,,,,,,,,,,,,,,,,,,,,,
+713,707,,,,,,,,,,,,,,,,,,,,,,
+714,708,,,,,,,,,,,,,,,,,,,,,,
+715,709,,,,,,,,,,,,,,,,,,,,,,
+716,710,,,,,,,,,,,,,,,,,,,,,,
+717,711,,,,,,,,,,,,,,,,,,,,,,
+718,712,,,,,,,,,,,,,,,,,,,,,,
+719,713,,,,,,,,,,,,,,,,,,,,,,
+720,714,,,,,,,,,,,,,,,,,,,,,,
+721,715,,,,,,,,,,,,,,,,,,,,,,
+722,716,,,,,,,,,,,,,,,,,,,,,,
+723,717,,,,,,,,,,,,,,,,,,,,,,
+724,718,,,,,,,,,,,,,,,,,,,,,,
+725,719,,,,,,,,,,,,,,,,,,,,,,
+726,720,,,,,,,,,,,,,,,,,,,,,,
+727,721,,,,,,,,,,,,,,,,,,,,,,
+728,722,,,,,,,,,,,,,,,,,,,,,,
+729,723,,,,,,,,,,,,,,,,,,,,,,
+730,724,,,,,,,,,,,,,,,,,,,,,,
+731,725,,,,,,,,,,,,,,,,,,,,,,
+732,726,,,,,,,,,,,,,,,,,,,,,,
+733,727,,,,,,,,,,,,,,,,,,,,,,
+734,728,,,,,,,,,,,,,,,,,,,,,,
+735,729,,,,,,,,,,,,,,,,,,,,,,
+736,730,,,,,,,,,,,,,,,,,,,,,,
+737,731,,,,,,,,,,,,,,,,,,,,,,
+738,732,,,,,,,,,,,,,,,,,,,,,,
+739,733,,,,,,,,,,,,,,,,,,,,,,
+740,734,,,,,,,,,,,,,,,,,,,,,,
+741,735,,,,,,,,,,,,,,,,,,,,,,
+742,736,,,,,,,,,,,,,,,,,,,,,,
+743,737,,,,,,,,,,,,,,,,,,,,,,
+744,738,,,,,,,,,,,,,,,,,,,,,,
+745,739,,,,,,,,,,,,,,,,,,,,,,
+746,740,,,,,,,,,,,,,,,,,,,,,,
+747,741,,,,,,,,,,,,,,,,,,,,,,
+748,742,,,,,,,,,,,,,,,,,,,,,,
+749,743,,,,,,,,,,,,,,,,,,,,,,
+750,744,,,,,,,,,,,,,,,,,,,,,,
+751,745,,,,,,,,,,,,,,,,,,,,,,
+752,746,,,,,,,,,,,,,,,,,,,,,,
+753,747,,,,,,,,,,,,,,,,,,,,,,
+754,748,,,,,,,,,,,,,,,,,,,,,,
+755,749,,,,,,,,,,,,,,,,,,,,,,
+756,750,,,,,,,,,,,,,,,,,,,,,,
+757,751,,,,,,,,,,,,,,,,,,,,,,
+758,752,,,,,,,,,,,,,,,,,,,,,,
+759,753,,,,,,,,,,,,,,,,,,,,,,
+760,754,,,,,,,,,,,,,,,,,,,,,,
+761,755,,,,,,,,,,,,,,,,,,,,,,
+762,756,,,,,,,,,,,,,,,,,,,,,,
+763,757,,,,,,,,,,,,,,,,,,,,,,
+764,758,,,,,,,,,,,,,,,,,,,,,,
+765,759,,,,,,,,,,,,,,,,,,,,,,
+766,760,,,,,,,,,,,,,,,,,,,,,,
+767,761,,,,,,,,,,,,,,,,,,,,,,
+768,762,,,,,,,,,,,,,,,,,,,,,,
+769,763,,,,,,,,,,,,,,,,,,,,,,
+770,764,,,,,,,,,,,,,,,,,,,,,,
+771,765,,,,,,,,,,,,,,,,,,,,,,
+772,766,,,,,,,,,,,,,,,,,,,,,,
+773,767,,,,,,,,,,,,,,,,,,,,,,
+774,768,,,,,,,,,,,,,,,,,,,,,,
+775,769,,,,,,,,,,,,,,,,,,,,,,
+776,770,,,,,,,,,,,,,,,,,,,,,,
+777,771,,,,,,,,,,,,,,,,,,,,,,
+778,772,,,,,,,,,,,,,,,,,,,,,,
+779,773,,,,,,,,,,,,,,,,,,,,,,
+780,774,,,,,,,,,,,,,,,,,,,,,,
+781,775,,,,,,,,,,,,,,,,,,,,,,
+782,776,,,,,,,,,,,,,,,,,,,,,,
+783,777,,,,,,,,,,,,,,,,,,,,,,
+784,778,,,,,,,,,,,,,,,,,,,,,,
+785,779,,,,,,,,,,,,,,,,,,,,,,
+786,780,,,,,,,,,,,,,,,,,,,,,,
+787,781,,,,,,,,,,,,,,,,,,,,,,
+788,782,,,,,,,,,,,,,,,,,,,,,,
+789,783,,,,,,,,,,,,,,,,,,,,,,
+790,784,,,,,,,,,,,,,,,,,,,,,,
+791,785,,,,,,,,,,,,,,,,,,,,,,
+792,786,,,,,,,,,,,,,,,,,,,,,,
+793,787,,,,,,,,,,,,,,,,,,,,,,
+794,788,,,,,,,,,,,,,,,,,,,,,,
+795,789,,,,,,,,,,,,,,,,,,,,,,
+796,790,,,,,,,,,,,,,,,,,,,,,,
+797,791,,,,,,,,,,,,,,,,,,,,,,
+798,792,,,,,,,,,,,,,,,,,,,,,,
+799,793,,,,,,,,,,,,,,,,,,,,,,
+800,794,,,,,,,,,,,,,,,,,,,,,,
+801,795,,,,,,,,,,,,,,,,,,,,,,
+802,796,,,,,,,,,,,,,,,,,,,,,,
+803,797,,,,,,,,,,,,,,,,,,,,,,
+804,798,,,,,,,,,,,,,,,,,,,,,,
+805,799,,,,,,,,,,,,,,,,,,,,,,
+806,800,,,,,,,,,,,,,,,,,,,,,,
+807,801,,,,,,,,,,,,,,,,,,,,,,
+808,802,,,,,,,,,,,,,,,,,,,,,,
+809,803,,,,,,,,,,,,,,,,,,,,,,
+810,804,,,,,,,,,,,,,,,,,,,,,,
+811,805,,,,,,,,,,,,,,,,,,,,,,
+812,806,,,,,,,,,,,,,,,,,,,,,,
+813,807,,,,,,,,,,,,,,,,,,,,,,
+814,808,,,,,,,,,,,,,,,,,,,,,,
+815,809,,,,,,,,,,,,,,,,,,,,,,
+816,810,,,,,,,,,,,,,,,,,,,,,,
+817,811,,,,,,,,,,,,,,,,,,,,,,
+818,812,,,,,,,,,,,,,,,,,,,,,,
+819,813,,,,,,,,,,,,,,,,,,,,,,
+820,814,,,,,,,,,,,,,,,,,,,,,,
+821,815,,,,,,,,,,,,,,,,,,,,,,
+822,816,,,,,,,,,,,,,,,,,,,,,,
+823,817,,,,,,,,,,,,,,,,,,,,,,
+824,818,,,,,,,,,,,,,,,,,,,,,,
+825,819,,,,,,,,,,,,,,,,,,,,,,
+826,820,,,,,,,,,,,,,,,,,,,,,,
+827,821,,,,,,,,,,,,,,,,,,,,,,
+828,822,,,,,,,,,,,,,,,,,,,,,,
+829,823,,,,,,,,,,,,,,,,,,,,,,
+830,824,,,,,,,,,,,,,,,,,,,,,,
+831,825,,,,,,,,,,,,,,,,,,,,,,
+832,826,,,,,,,,,,,,,,,,,,,,,,
+833,827,,,,,,,,,,,,,,,,,,,,,,
+834,828,,,,,,,,,,,,,,,,,,,,,,
+835,829,,,,,,,,,,,,,,,,,,,,,,
+836,830,,,,,,,,,,,,,,,,,,,,,,
+837,831,,,,,,,,,,,,,,,,,,,,,,
+838,832,,,,,,,,,,,,,,,,,,,,,,
+839,833,,,,,,,,,,,,,,,,,,,,,,
+840,834,,,,,,,,,,,,,,,,,,,,,,
+841,835,,,,,,,,,,,,,,,,,,,,,,
+842,836,,,,,,,,,,,,,,,,,,,,,,
+843,837,,,,,,,,,,,,,,,,,,,,,,
+844,838,,,,,,,,,,,,,,,,,,,,,,
+845,839,,,,,,,,,,,,,,,,,,,,,,
+846,840,,,,,,,,,,,,,,,,,,,,,,
+847,841,,,,,,,,,,,,,,,,,,,,,,
+848,842,,,,,,,,,,,,,,,,,,,,,,
+849,843,,,,,,,,,,,,,,,,,,,,,,
+850,844,,,,,,,,,,,,,,,,,,,,,,
+851,845,,,,,,,,,,,,,,,,,,,,,,
+852,846,,,,,,,,,,,,,,,,,,,,,,
+853,847,,,,,,,,,,,,,,,,,,,,,,
+854,848,,,,,,,,,,,,,,,,,,,,,,
+855,849,,,,,,,,,,,,,,,,,,,,,,
+856,850,,,,,,,,,,,,,,,,,,,,,,
+857,851,,,,,,,,,,,,,,,,,,,,,,
+858,852,,,,,,,,,,,,,,,,,,,,,,
+859,853,,,,,,,,,,,,,,,,,,,,,,
+860,854,,,,,,,,,,,,,,,,,,,,,,
+861,855,,,,,,,,,,,,,,,,,,,,,,
+862,856,,,,,,,,,,,,,,,,,,,,,,
+863,857,,,,,,,,,,,,,,,,,,,,,,
+864,858,,,,,,,,,,,,,,,,,,,,,,
+865,859,,,,,,,,,,,,,,,,,,,,,,
+866,860,,,,,,,,,,,,,,,,,,,,,,
+867,861,,,,,,,,,,,,,,,,,,,,,,
+868,862,,,,,,,,,,,,,,,,,,,,,,
+869,863,,,,,,,,,,,,,,,,,,,,,,
+870,864,,,,,,,,,,,,,,,,,,,,,,
+871,865,,,,,,,,,,,,,,,,,,,,,,
+872,866,,,,,,,,,,,,,,,,,,,,,,
+873,867,,,,,,,,,,,,,,,,,,,,,,
+874,868,,,,,,,,,,,,,,,,,,,,,,
+875,869,,,,,,,,,,,,,,,,,,,,,,
+876,870,,,,,,,,,,,,,,,,,,,,,,
+877,871,,,,,,,,,,,,,,,,,,,,,,
+878,872,,,,,,,,,,,,,,,,,,,,,,
+879,873,,,,,,,,,,,,,,,,,,,,,,
+880,874,,,,,,,,,,,,,,,,,,,,,,
+881,875,,,,,,,,,,,,,,,,,,,,,,
+882,876,,,,,,,,,,,,,,,,,,,,,,
+883,877,,,,,,,,,,,,,,,,,,,,,,
+884,878,,,,,,,,,,,,,,,,,,,,,,
+885,879,,,,,,,,,,,,,,,,,,,,,,
+886,880,,,,,,,,,,,,,,,,,,,,,,
+887,881,,,,,,,,,,,,,,,,,,,,,,
+888,882,,,,,,,,,,,,,,,,,,,,,,
+889,883,,,,,,,,,,,,,,,,,,,,,,
+890,884,,,,,,,,,,,,,,,,,,,,,,
+891,885,,,,,,,,,,,,,,,,,,,,,,
+892,886,,,,,,,,,,,,,,,,,,,,,,
+893,887,,,,,,,,,,,,,,,,,,,,,,
+894,888,,,,,,,,,,,,,,,,,,,,,,
+895,889,,,,,,,,,,,,,,,,,,,,,,
+896,890,,,,,,,,,,,,,,,,,,,,,,
+897,891,,,,,,,,,,,,,,,,,,,,,,
+898,892,,,,,,,,,,,,,,,,,,,,,,
+899,893,,,,,,,,,,,,,,,,,,,,,,
+900,894,,,,,,,,,,,,,,,,,,,,,,
+901,895,,,,,,,,,,,,,,,,,,,,,,
+902,896,,,,,,,,,,,,,,,,,,,,,,
+903,897,,,,,,,,,,,,,,,,,,,,,,
+904,898,,,,,,,,,,,,,,,,,,,,,,
+905,899,,,,,,,,,,,,,,,,,,,,,,
+906,900,,,,,,,,,,,,,,,,,,,,,,
+907,901,,,,,,,,,,,,,,,,,,,,,,
+908,902,,,,,,,,,,,,,,,,,,,,,,
+909,903,,,,,,,,,,,,,,,,,,,,,,
+910,904,,,,,,,,,,,,,,,,,,,,,,
+911,905,,,,,,,,,,,,,,,,,,,,,,
+912,906,,,,,,,,,,,,,,,,,,,,,,
+913,907,,,,,,,,,,,,,,,,,,,,,,
+914,908,,,,,,,,,,,,,,,,,,,,,,
+915,909,,,,,,,,,,,,,,,,,,,,,,
+916,910,,,,,,,,,,,,,,,,,,,,,,
+917,911,,,,,,,,,,,,,,,,,,,,,,
+918,912,,,,,,,,,,,,,,,,,,,,,,
+919,913,,,,,,,,,,,,,,,,,,,,,,
+920,914,,,,,,,,,,,,,,,,,,,,,,
+921,915,,,,,,,,,,,,,,,,,,,,,,
+922,916,,,,,,,,,,,,,,,,,,,,,,
+923,917,,,,,,,,,,,,,,,,,,,,,,
+924,918,,,,,,,,,,,,,,,,,,,,,,
+925,919,,,,,,,,,,,,,,,,,,,,,,
+926,920,,,,,,,,,,,,,,,,,,,,,,
+927,921,,,,,,,,,,,,,,,,,,,,,,
+928,922,,,,,,,,,,,,,,,,,,,,,,
+929,923,,,,,,,,,,,,,,,,,,,,,,
+930,924,,,,,,,,,,,,,,,,,,,,,,
+931,925,,,,,,,,,,,,,,,,,,,,,,
+932,926,,,,,,,,,,,,,,,,,,,,,,
+933,927,,,,,,,,,,,,,,,,,,,,,,
+934,928,,,,,,,,,,,,,,,,,,,,,,
+935,929,,,,,,,,,,,,,,,,,,,,,,
+936,930,,,,,,,,,,,,,,,,,,,,,,
+937,931,,,,,,,,,,,,,,,,,,,,,,
+938,932,,,,,,,,,,,,,,,,,,,,,,
+939,933,,,,,,,,,,,,,,,,,,,,,,
+940,934,,,,,,,,,,,,,,,,,,,,,,
+941,935,,,,,,,,,,,,,,,,,,,,,,
+942,936,,,,,,,,,,,,,,,,,,,,,,
+943,937,,,,,,,,,,,,,,,,,,,,,,
+944,938,,,,,,,,,,,,,,,,,,,,,,
+945,939,,,,,,,,,,,,,,,,,,,,,,
+946,940,,,,,,,,,,,,,,,,,,,,,,
+947,941,,,,,,,,,,,,,,,,,,,,,,
+948,942,,,,,,,,,,,,,,,,,,,,,,
+949,943,,,,,,,,,,,,,,,,,,,,,,
+950,944,,,,,,,,,,,,,,,,,,,,,,
+951,945,,,,,,,,,,,,,,,,,,,,,,
+952,946,,,,,,,,,,,,,,,,,,,,,,
+953,947,,,,,,,,,,,,,,,,,,,,,,
+954,948,,,,,,,,,,,,,,,,,,,,,,
+955,949,,,,,,,,,,,,,,,,,,,,,,
+956,950,,,,,,,,,,,,,,,,,,,,,,
+957,951,,,,,,,,,,,,,,,,,,,,,,
+958,952,,,,,,,,,,,,,,,,,,,,,,
+959,953,,,,,,,,,,,,,,,,,,,,,,
+960,954,,,,,,,,,,,,,,,,,,,,,,
+961,955,,,,,,,,,,,,,,,,,,,,,,
+962,956,,,,,,,,,,,,,,,,,,,,,,
+963,957,,,,,,,,,,,,,,,,,,,,,,
+964,958,,,,,,,,,,,,,,,,,,,,,,
+965,959,,,,,,,,,,,,,,,,,,,,,,
+966,960,,,,,,,,,,,,,,,,,,,,,,
+967,961,,,,,,,,,,,,,,,,,,,,,,
+968,962,,,,,,,,,,,,,,,,,,,,,,
+969,963,,,,,,,,,,,,,,,,,,,,,,
+970,964,,,,,,,,,,,,,,,,,,,,,,
+971,965,,,,,,,,,,,,,,,,,,,,,,
+972,966,,,,,,,,,,,,,,,,,,,,,,
+973,967,,,,,,,,,,,,,,,,,,,,,,
+974,968,,,,,,,,,,,,,,,,,,,,,,
+975,969,,,,,,,,,,,,,,,,,,,,,,
+976,970,,,,,,,,,,,,,,,,,,,,,,
+977,971,,,,,,,,,,,,,,,,,,,,,,
+978,972,,,,,,,,,,,,,,,,,,,,,,
+979,973,,,,,,,,,,,,,,,,,,,,,,
+980,974,,,,,,,,,,,,,,,,,,,,,,
+981,975,,,,,,,,,,,,,,,,,,,,,,
+982,976,,,,,,,,,,,,,,,,,,,,,,
+983,977,,,,,,,,,,,,,,,,,,,,,,
+984,978,,,,,,,,,,,,,,,,,,,,,,
+985,979,,,,,,,,,,,,,,,,,,,,,,
+986,980,,,,,,,,,,,,,,,,,,,,,,
